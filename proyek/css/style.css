@@ -1,0 +1,20 @@
+#home{
+    /* background-image:url(../img/tugas3.jpeg); */
+    background-color: #3D3E3D;
+    opacity: 85%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height : 100vh; 
+    font-family: Kelly Slab;
+    font-size: 30px;
+    color: white;
+}
+.helloFresh{
+    text-align: center;
+}
+.card.kotak1{
+    color: #C85141;
+}
+.kotak2{
+    color: #C85141;
+}
