@@ -57,23 +57,20 @@
         
         <div class="row">
             <div class="col-lg-3"></div>
-                    <div class="col-lg-2"><br>
-                    <a href="contactUs.php"><div class="card kotak1" type="button" style="width: 80%; height:75%">
-                    <img src="../img/contact.svg" class="card-img-top mt-3" height="80" width="80">
-                        <div class="card-body">
-                            <h5 class="card-title">Contact Us</h5>
-                        </div>
+                <div class="col-lg-2"><br>
+                    <a href="contactUs.php">
+                    <div class="card kotak1" type="button" style="width: 80%; height:75%">
+                        <img src="../img/contact.svg" class="card-img-top mt-3" style="color:white;" height="80" width="80">
+                        <h5 class="card-title pt-5">Contact Us</h5>    
                     </div></a>
-                    </div>
-
-                    <div class="col-lg-2 mr-5"><br>
-                    <a href="cariPekerjaan.php"><div class="card kotak2" type="button" style="width: 100%; height:175%">
-                        <img src="../img/searchjob.svg" class="card-img-top mt-3" height="80" width="80">
-                        <div class="card-body">
-                            <h5 class="card-title">Cari Pekerjaan</h5>
-                        </div></a>
-                    </div>
-                    </div>
+                </div>
+                
+                <div class="col-lg-2 mr-5"><br>
+                    <a href="cariPekerjaan.php">
+                    <div class="card kotak2" type="button" style="width: 100%; height:175%">
+                        <img src="../img/searchjob.svg" class="card-img-top mt-5" height="100" width="100">
+                    </div></a>
+                </div>
 
                 <div class="col-lg-2"><br>
                 <a href="listPerusahaan.php">
@@ -86,30 +83,35 @@
                     </div>
                 </div>
 
-                <div class="row">
-            <div class="col-lg-3"></div>
+            <div class="row">
+                <div class="col-lg-3">
+                </div>
 
                 <div class="col-lg-2"><br>
-                <a href="listPekerjaan.php">
-                <div class="card kotak4" type="button" style="width: 80%; height:75%">
+                    <a href="listPekerjaan.php">
+                    <div class="card kotak4" type="button" style="width: 80%; height:75%">
                         <img src="../img/listjob.svg" class="card-img-top mt-3" height="57" width="57">
                         <div class="card-body">
                             <h5 class="card-title">List Pekerjaan</h5>
-                        </div></a>
-                    </div>
+                        </div>
+                    </div></a>
                 </div>
 
                 <div class="col-lg-2 mr-5"><br>
+                <a href="cariPekerjaan.php"><div class="card-body">
+                        <h5 class="card-title" style="color:white;">Cari Pekerjaan</h5>
+                    </div></a>
                 </div>
 
                 <div class="col-lg-2"><br>
-                <a href="aboutUs.php">
-                    <div class="card kotak5" type="button" style="width: 80%; height:75%">
-                        <img src="../img/about.svg" class="card-img-top mt-3" height="80" width="80">
-                        <div class="card-body">
-                            <h5 class="card-title">About Us</h5>
+                    <a href="aboutUs.php">
+                        <div class="card kotak5" type="button" style="width: 80%; height:75%">
+                            <img src="../img/about.svg" class="card-img-top mt-3" height="80" width="80">
+                            <div class="card-body">
+                                <h5 class="card-title">About Us</h5>
+                            </div>
                         </div>
-                    </div></a>
+                    </a>
                 </div>
             </div>
         </div>

@@ -1,0 +1,9 @@
+#home{
+    background-image:url(../img/listperusahaan2.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    height : 100vh; 
+    font-family: Kelly Slab;
+    font-size: 30px;
+    color: white;
+}

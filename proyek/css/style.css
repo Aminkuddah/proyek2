@@ -1,10 +1,10 @@
 #home{
-    /* background-image:url(../img/tugas3.jpeg); */
-    background-color: #3D3E3D;
-    opacity: 85%;
+    background-image:url(../img/tugas31.jpg);
+    /* opacity: 0.9; */
     background-repeat: no-repeat;
     background-size: cover;
     height : 100vh; 
+    width: 100%;
     font-family: Kelly Slab;
     font-size: 30px;
     color: white;
@@ -12,9 +12,60 @@
 .helloFresh{
     text-align: center;
 }
-.card.kotak1{
-    color: #C85141;
+
+.sosmedLogo{
+    filter: #50B28A;
 }
-.kotak2{
-    color: #C85141;
+
+.card.kotak1{
+    background-color: #C85141;
+    opacity: 0.82;
+    color: white;
+}
+.card.kotak1:hover{
+    background-color: #3D3E3D;
+    opacity: 0.82;
+    color: white;
+}
+
+.card.kotak2{
+    background-color: #50B28A;
+    opacity: 0.82;
+    color: white;
+}
+.card.kotak2:hover{
+    background-color: #3D3E3D;
+    opacity: 0.82;
+    color: white;
+}
+
+.card.kotak3{
+    background-color: #D8733B;
+    opacity: 0.82;
+    color: white;
+}
+.card.kotak3:hover{
+    background-color: #3D3E3D;
+    opacity: 0.82;
+    color: white;
+}
+.card.kotak4{
+    background-color: #D9912A;
+    opacity: 0.82;
+    color: white;
+}
+.card.kotak4:hover{
+    background-color: #3D3E3D;
+    opacity: 0.82;
+    color: white;
+}
+.card.kotak5{
+    background-color: #50B2AD;
+    opacity: 0.82;
+    color: white;
+}
+.card.kotak5:hover{
+    background-color: #3D3E3D;
+    opacity: 0.82;
+    color: white;
 }
