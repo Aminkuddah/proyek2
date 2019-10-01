@@ -10,14 +10,21 @@
             <div class="col-lg-2 p-3"></div>
             <div class="col-lg-8 p-3">
                 <div class="navbar navbar-light">
-                    <a href="index.php"><h1>About Us</h1></a>
+                    <h1>About Us</h1>
                     <div class="sosmed ">
-                        <img src="../img/fb.svg" class="sosmedLogo" height="35" width="35">
-                        <img src="../img/twitter.svg" class="sosmedLogo" height="35" width="35">
-                        <img src="../img/google.svg" class="sosmedLogo" height="35" width="35">
-                        <img src="../img/linkedin.png" class="sosmedLogo" height="35" width="35">
+                    <a href="index.php"><img src="../img/fb.svg" class="sosmedLogo" height="35" width="35"></a>
+                    <a href="index.php"><img src="../img/twitter.svg" class="sosmedLogo" height="35" width="35"></a>
+                    <a href="index.php"><img src="../img/google.svg" class="sosmedLogo" height="35" width="35"></a>
+                    <a href="index.php"><img src="../img/linkedin.png" class="sosmedLogo" height="35" width="35"></a>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h3>Golek Kerjo</h3>
+                <h5 style="text-align:center">Golek kerjo adalah aplikasi karya mahasiswa Politeknik Negeri Malang yang memudahkan lulusan mahasiswa jurusan Teknologi Informasi untuk menentukan profesi kerja mereka setelah lulus nanti</h5>
             </div>
         </div>
     </div>

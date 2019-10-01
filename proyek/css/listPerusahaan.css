@@ -1,5 +1,5 @@
 #home{
-    background-image:url(../img/listperusahaan2.jpg);
+    background-image:url(../img/listperusahaan3.jpg);
     /* background-repeat: no-repeat; */
     background-size: cover;
     height : 100vh; 
@@ -7,3 +7,8 @@
     font-size: 30px;
     color: white;
 }
+
+/* .perusahaan1{
+    height: 50%;
+    width: 70%;
+} */
