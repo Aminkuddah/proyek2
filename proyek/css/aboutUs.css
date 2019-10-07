@@ -9,3 +9,19 @@
     font-size: 30px;
     color: white;
 }
+
+.telkom{
+    background-image: url(../img/tugas4.jpeg);
+    opacity: 0.8;
+    margin-top: 3%;
+}
+.ericsson{
+    background-image: url(../img/tugas4.jpeg);
+    opacity: 0.8;
+    margin-top: 3%;
+}
+.google{
+    background-image: url(../img/tugas4.jpeg);
+    opacity: 0.8;
+    margin-top: 3%;
+}

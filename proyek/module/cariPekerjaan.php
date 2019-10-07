@@ -20,6 +20,74 @@
                 </div>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <form>
+                    <div class="form-group">
+                    <label for="nama">Nama</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Nama</span>
+                            </div>
+                            <input type="input" class="form-control" placeholder="Masukkan nama anda" aria-label="Username">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                    <label for="IPK">Indeks Prestasi Kumulatif</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">IPK</span>
+                            </div>
+                            <input type="input" class="form-control" placeholder="Masukkan IPK anda" aria-label="Username">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pendidikanTerakhir">Pendidikan Terakhir</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">Pendidikan Terakhir</label>
+                            </div>
+                            <select class="custom-select" id="inputGroupSelect01">
+                                <option selected>Pilih pendidikan terakhir anda</option>
+                                <option value="1">SD</option>
+                                <option value="2">SMP</option>
+                                <option value="3">SMA</option>
+                                <option value="3">SARJANA</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Usia">Usia</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Usia</span>
+                            </div>
+                            <input type="input" class="form-control" placeholder="Masukkan Umur Anda" aria-label="Username">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Usia">Gender</label>
+                        <div class="form-check">
+                            <input type="radio" name="laki-laki" value="">
+                            Laki-Laki
+                            <input type="radio" name="perempuan" value="">
+                            Perempuan
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Usia">Skor TOEFL</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Masukkan Skor TOEFL Anda</span>
+                            </div>
+                            <input type="input" class="form-control" placeholder="Masukkan Umur Anda" aria-label="Username">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 
     <!-- <img src="../img/caripekerjaan.jpg" height="80%" width="100%" > -->
