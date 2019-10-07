@@ -1,5 +1,5 @@
 <?php
-include 'helper/connection.php';
+include '../helper/connection.php';
 
 if(isset($_GET['pesan'])){
     $mess="<p> {$_GET['pesan']}</p>";
