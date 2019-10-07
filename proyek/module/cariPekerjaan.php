@@ -1,4 +1,13 @@
-<!DOCTYPE html>
+<?php
+include '../helper/connection.php';
+
+if(isset($_GET['pesan'])){
+    $mess="<p> {$_GET['pesan']}</p>";
+}else{
+    $mess="";
+}
+?>
+
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -11,6 +20,7 @@
             <div class="col-lg-8 p-3">
                 <div class="navbar navbar-light">
                     <h1>Cari Pekerjaan</h1>
+                    <?php echo $mess; ?>
                     <div class="sosmed ">
                         <a href="index.php"><img src="../img/fb.svg" class="sosmedLogo" height="35" width="35"></a>
                         <a href="index.php"><img src="../img/twitter.svg" class="sosmedLogo" height="35" width="35"></a>
@@ -24,7 +34,8 @@
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
-                <form>
+                <form action="../proccess/actionSPK.php" method="POST" enctype="multipart/form-data">
+                <?php echo $mess; ?>
                 <h2 style="text-align: center;">Isilah form di bawah terlebih dahulu</h2>
                     <div class="form-group">
                     <label for="nama">Nama</label>
@@ -32,7 +43,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1">Nama</span>
                             </div>
-                            <input type="input" class="form-control" placeholder="Masukkan nama anda" aria-label="Username" required>
+                            <input type="input" class="form-control" placeholder="Masukkan nama anda" id="nama" name="nama" aria-label="Username" required>
                         </div>
                     </div>
                     <div class="form-group">
@@ -41,7 +52,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1">IPK</span>
                             </div>
-                            <input type="number" class="form-control" placeholder="Masukkan IPK anda" aria-label="Username" required>
+                            <input type="numberDecimal" class="form-control" placeholder="Masukkan IPK anda" id="ipk" name="ipk" aria-label="Username" required>
                         </div>
                     </div>
                     <div class="form-group">
@@ -50,7 +61,7 @@
                             <div class="input-group-prepend">
                                 <label class="input-group-text" for="pendidikan">Pendidikan Terakhir</label>
                             </div>
-                            <select class="custom-select" id="pendidikanTerakhir" required>
+                            <select class="custom-select" id="pendidikanTerakhir" name="pendidikanTerakhir" required>
                                 <option value="">Pilih pendidikan terakhir anda</option>
                                 <option value="sd">SD</option>
                                 <option value="smp">SMP</option>
@@ -65,7 +76,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1">Usia</span>
                             </div>
-                            <input type="number" class="form-control" placeholder="Masukkan Umur Anda" aria-label="" required>
+                            <input type="number" class="form-control" placeholder="Masukkan Umur Anda" id="usia" name="usia" aria-label="" required>
                         </div>
                     </div>
                     <div class="form-group">
@@ -90,7 +101,8 @@
                             <label class="form-check-label" for="bahasa2">Tidak</label>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary" style="width: 20%;">Kirim</button>
+                    <?php echo $mess; ?>
+                    <input type="submit" name="submit" class="btn btn-primary btn-block" value="Submit"/>
                 </form>
             </div>
         </div>
