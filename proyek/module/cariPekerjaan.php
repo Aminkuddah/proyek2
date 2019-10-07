@@ -40,21 +40,21 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1">IPK</span>
                             </div>
-                            <input type="input" class="form-control" placeholder="Masukkan IPK anda" aria-label="Username">
+                            <input type="number" class="form-control" placeholder="Masukkan IPK anda" aria-label="Username">
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="pendidikanTerakhir">Pendidikan Terakhir</label>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <label class="input-group-text" for="inputGroupSelect01">Pendidikan Terakhir</label>
+                                <label class="input-group-text" for="pendidikan">Pendidikan Terakhir</label>
                             </div>
-                            <select class="custom-select" id="inputGroupSelect01">
+                            <select class="custom-select" id="pendidikanTerakhir">
                                 <option selected>Pilih pendidikan terakhir anda</option>
-                                <option value="1">SD</option>
-                                <option value="2">SMP</option>
-                                <option value="3">SMA</option>
-                                <option value="3">SARJANA</option>
+                                <option value="sd">SD</option>
+                                <option value="smp">SMP</option>
+                                <option value="sma">SMA</option>
+                                <option value="sarjana">SARJANA</option>
                             </select>
                         </div>
                     </div>
@@ -64,7 +64,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1">Usia</span>
                             </div>
-                            <input type="input" class="form-control" placeholder="Masukkan Umur Anda" aria-label="Username">
+                            <input type="number" class="form-control" placeholder="Masukkan Umur Anda" aria-label="Username">
                         </div>
                     </div>
                     <div class="form-group">
@@ -82,7 +82,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1">Masukkan Skor TOEFL Anda</span>
                             </div>
-                            <input type="input" class="form-control" placeholder="Masukkan Umur Anda" aria-label="Username">
+                            <input type="number" class="form-control" placeholder="Masukkan Umur Anda" aria-label="Username">
                         </div>
                     </div>
                 </form>
