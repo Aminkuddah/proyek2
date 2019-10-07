@@ -25,6 +25,7 @@
             <div class="col-md-3"></div>
             <div class="col-md-6">
                 <form>
+                <h2 style="text-align: center;">Isilah form di bawah terlebih dahulu</h2>
                     <div class="form-group">
                     <label for="nama">Nama</label>
                         <div class="input-group mb-3">
@@ -64,27 +65,33 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1">Usia</span>
                             </div>
-                            <input type="number" class="form-control" placeholder="Masukkan Umur Anda" aria-label="Username">
+                            <input type="number" class="form-control" placeholder="Masukkan Umur Anda" aria-label="">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="Usia">Gender</label>
-                        <div class="form-check">
-                            <input type="radio" name="laki-laki" value="">
-                            Laki-Laki
-                            <input type="radio" name="perempuan" value="">
-                            Perempuan
+                        <label for="Usia">Gender</label> <br>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="lakilaki" value="">
+                            <label class="form-check-label" for="gender1">Laki-Laki</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="perempuan" value="">
+                            <label class="form-check-label" for="gender2">Perempuan</label>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="Usia">Skor TOEFL</label>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1">Masukkan Skor TOEFL Anda</span>
-                            </div>
-                            <input type="number" class="form-control" placeholder="Masukkan Umur Anda" aria-label="Username">
+                        <label for="Usia">Kemampuan Berbahasa inggris</label><br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="bahasa" id="ya" value="">
+                            <label class="form-check-label" for="bahasa1">Ya</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="bahasa" id="tidak" value="">
+                            <label class="form-check-label" for="bahasa2">Tidak</label>
                         </div>
                     </div>
+                    <button type="submit" class="btn btn-primary" style="width: 20%;">Kirim</button></button>
                 </form>
             </div>
         </div>
