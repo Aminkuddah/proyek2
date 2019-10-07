@@ -32,7 +32,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1">Nama</span>
                             </div>
-                            <input type="input" class="form-control" placeholder="Masukkan nama anda" aria-label="Username">
+                            <input type="input" class="form-control" placeholder="Masukkan nama anda" aria-label="Username" required>
                         </div>
                     </div>
                     <div class="form-group">
@@ -41,7 +41,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1">IPK</span>
                             </div>
-                            <input type="number" class="form-control" placeholder="Masukkan IPK anda" aria-label="Username">
+                            <input type="number" class="form-control" placeholder="Masukkan IPK anda" aria-label="Username" required>
                         </div>
                     </div>
                     <div class="form-group">
@@ -50,8 +50,8 @@
                             <div class="input-group-prepend">
                                 <label class="input-group-text" for="pendidikan">Pendidikan Terakhir</label>
                             </div>
-                            <select class="custom-select" id="pendidikanTerakhir">
-                                <option selected>Pilih pendidikan terakhir anda</option>
+                            <select class="custom-select" id="pendidikanTerakhir" required>
+                                <option value="">Pilih pendidikan terakhir anda</option>
                                 <option value="sd">SD</option>
                                 <option value="smp">SMP</option>
                                 <option value="sma">SMA</option>
@@ -65,33 +65,32 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1">Usia</span>
                             </div>
-                            <input type="number" class="form-control" placeholder="Masukkan Umur Anda" aria-label="">
+                            <input type="number" class="form-control" placeholder="Masukkan Umur Anda" aria-label="" required>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="Usia">Gender</label> <br>
-
+                        <label for="Usia">Gender</label><br>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="gender" id="lakilaki" value="">
+                            <input class="form-check-input" type="radio" name="gender" id="gender" value="laki" required>
                             <label class="form-check-label" for="gender1">Laki-Laki</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="gender" id="perempuan" value="">
+                            <input class="form-check-input" type="radio" name="gender" id="gender" value="perempuan">
                             <label class="form-check-label" for="gender2">Perempuan</label>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="Usia">Kemampuan Berbahasa inggris</label><br>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="bahasa" id="ya" value="">
+                            <input class="form-check-input" type="radio" name="bahasa" id="bahasa" value="ya" required>
                             <label class="form-check-label" for="bahasa1">Ya</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="bahasa" id="tidak" value="">
+                            <input class="form-check-input" type="radio" name="bahasa" id="bahasa" value="tidak">
                             <label class="form-check-label" for="bahasa2">Tidak</label>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary" style="width: 20%;">Kirim</button></button>
+                    <button type="submit" class="btn btn-primary" style="width: 20%;">Kirim</button>
                 </form>
             </div>
         </div>
