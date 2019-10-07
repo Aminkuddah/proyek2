@@ -1,4 +1,13 @@
-<!DOCTYPE html>
+<?php
+include 'helper/connection.php';
+
+if(isset($_GET['pesan'])){
+    $mess="<p> {$_GET['pesan']}</p>";
+}else{
+    $mess="";
+}
+?>
+
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -18,6 +27,41 @@
                     <a href="index.php"><img src="../img/linkedin.png" class="sosmedLogo" height="35" width="35"></a>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="container mt-3 border border-success rounded bg-light">
+            <div class="row m-3">
+                <table class="table table-stripped text-center" id="table_id">
+                    <thead>
+                        <tr>
+                            <th class='align-middle'>#</th>
+                            <th class='align-middle'>List Pekerjaan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <?php
+                        $query = "SELECT * FROM tb_pekerjaan";
+                        $result = mysqli_query($con, $query);
+                        if(mysqli_num_rows($result) > 0){
+                            $index = 1;
+                            while($row = mysqli_fetch_assoc($result)){
+                                ?>
+                                <tr>
+                                    <td class='align-middle'><?php echo $index++; ?></td>
+                                    <td class='align-middle'><?php echo $row["nama_kategori"]; ?></td>
+                                </tr>
+                        <?php }
+                        }else{ ?>
+                            <tr>
+                                <td class='align-middle'>Data Kosong</td>
+                                <td class='align-middle'>Data Kosong</td>
+                            <tr>
+                        <?php
+                        }
+                    mysqli_close($con); 
+                    ?>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
