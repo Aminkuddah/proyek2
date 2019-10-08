@@ -46,6 +46,17 @@ if(isset($_GET['error'])){
                         </div>
                     </div>
                     <div class="form-group">
+                        <label for="Usia">Gender</label><br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="gender1" value="laki" required>
+                            <label class="form-check-label" for="gender1">Laki-Laki</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="gender2" value="perempuan" required>
+                            <label class="form-check-label" for="gender2">Perempuan</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
                     <label for="IPK">Indeks Prestasi Kumulatif</label>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
@@ -70,6 +81,21 @@ if(isset($_GET['error'])){
                         </div>
                     </div>
                     <div class="form-group">
+                        <label for="pendidikanTerakhir">Akreditasi</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="pendidikan">Akreditasi Kampus</label>
+                            </div>
+                            <select class="custom-select" id="akreditasi" name="akreditasi" required>
+                                <option value="">Pilih pendidikan terakhir anda</option>
+                                <option value="">A</option>
+                                <option value="">B</option>
+                                <option value="">C</option>
+                                <option value="">Tidak Terakreditasi</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
                         <label for="Usia">Usia</label>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
@@ -79,24 +105,13 @@ if(isset($_GET['error'])){
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="Usia">Gender</label><br>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="gender" id="gender" value="laki" required>
-                            <label class="form-check-label" for="gender1">Laki-Laki</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="gender" id="gender" value="perempuan">
-                            <label class="form-check-label" for="gender2">Perempuan</label>
-                        </div>
-                    </div>
-                    <div class="form-group">
                         <label for="Usia">Kemampuan Berbahasa inggris</label><br>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="bahasa" id="bahasa" value="ya" required>
+                            <input class="form-check-input" type="radio" name="bahasa" id="bahasa1" value="ya" required>
                             <label class="form-check-label" for="bahasa1">Ya</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="bahasa" id="bahasa" value="tidak">
+                            <input class="form-check-input" type="radio" name="bahasa" id="bahasa2" value="tidak">
                             <label class="form-check-label" for="bahasa2">Tidak</label>
                         </div>
                     </div>
