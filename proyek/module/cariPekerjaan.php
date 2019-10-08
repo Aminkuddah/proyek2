@@ -1,8 +1,8 @@
 <?php
 include '../helper/connection.php';
 
-if(isset($_GET['pesan'])){
-    $mess="<p> {$_GET['pesan']}</p>";
+if(isset($_GET['error'])){
+    $mess="{$_GET['error']}";
 }else{
     $mess="";
 }
@@ -20,7 +20,7 @@ if(isset($_GET['pesan'])){
             <div class="col-lg-8 p-3">
                 <div class="navbar navbar-light">
                     <h1>Cari Pekerjaan</h1>
-                    <?php echo $mess; ?>
+                    <h5 class="text-danger border border-danger rounded-pill pl-2 pr-2 pb-2 pt-2 bg-light"><?php echo $mess; ?></h5>
                     <div class="sosmed ">
                         <a href="index.php"><img src="../img/fb.svg" class="sosmedLogo" height="35" width="35"></a>
                         <a href="index.php"><img src="../img/twitter.svg" class="sosmedLogo" height="35" width="35"></a>
@@ -35,7 +35,6 @@ if(isset($_GET['pesan'])){
             <div class="col-md-3"></div>
             <div class="col-md-6">
                 <form action="../proccess/actionSPK.php" method="POST" enctype="multipart/form-data">
-                <?php echo $mess; ?>
                 <h2 style="text-align: center;">Isilah form di bawah terlebih dahulu</h2>
                     <div class="form-group">
                     <label for="nama">Nama</label>
@@ -101,7 +100,6 @@ if(isset($_GET['pesan'])){
                             <label class="form-check-label" for="bahasa2">Tidak</label>
                         </div>
                     </div>
-                    <?php echo $mess; ?>
                     <input type="submit" name="submit" class="btn btn-primary btn-block" value="Submit"/>
                 </form>
             </div>

@@ -25,21 +25,5 @@ if (!empty($nama) && !empty($ipk) && !empty($pendidikan) && !empty($usia) && !em
     header("Location: ../module/cariPekerjaan.php?error=$error");
 }
 
-// if (mysqli_num_rows($result) == 0 && !empty($isi) && !empty($sinopsis) && !empty($namaBuku) && !empty($kategori) && !empty($berat)) {
-//     $query = "INSERT INTO tb_buku (nama_buku, id_user, id_kategori, id_level_buku, sinopsis, isi_buku)
-//     VALUES ('$namaBuku', '$id_user', '$kategori', '$berat', '$sinopsis', '$isi')";
-
-//     if (mysqli_query($con, $query)) {
-//         if($_SESSION['level'] == 'admin'){
-//             header("Location: ../index.php");    
-//         }else{
-//             header("Location: ../formHomeUser.php");
-//         }
-//     }else{
-//         $error = urldecode("Artikel tidak berhasil ditambahkan");
-//         header("Location: ../formUpload.php?error=$error");
-//     }
-// }
-
 mysqli_close($con);
 ?>
