@@ -37,7 +37,7 @@ if(isset($_GET['error'])){
                 <form action="../proccess/actionSPK.php" method="POST" enctype="multipart/form-data">
                 <h2 style="text-align: center;">Isilah form di bawah terlebih dahulu</h2>
                     <div class="form-group">
-                    <label for="nama">Nama</label>
+                    <label for="nama" style="font-size: 25px;">Nama</label>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1">Nama</span>
@@ -46,18 +46,18 @@ if(isset($_GET['error'])){
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="Usia">Gender</label><br>
+                        <label for="Usia" style="font-size: 25px;">Gender</label><br>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="gender" id="gender1" value="laki" required>
-                            <label class="form-check-label" for="gender1">Laki-Laki</label>
+                            <label class="form-check-label" style="font-size: 23px;" for="gender1">Laki-Laki</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="gender" id="gender2" value="perempuan" required>
-                            <label class="form-check-label" for="gender2">Perempuan</label>
+                            <label class="form-check-label" style="font-size: 23px;" for="gender2">Perempuan</label>
                         </div>
                     </div>
                     <div class="form-group">
-                    <label for="IPK">Indeks Prestasi Kumulatif</label>
+                    <label for="IPK" style="font-size: 25px;">Indeks Prestasi Kumulatif</label>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1">IPK</span>
@@ -66,7 +66,7 @@ if(isset($_GET['error'])){
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="pendidikanTerakhir">Pendidikan Terakhir</label>
+                        <label for="pendidikanTerakhir" style="font-size: 25px;">Pendidikan Terakhir</label>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <label class="input-group-text" for="pendidikan">Pendidikan Terakhir</label>
@@ -81,7 +81,7 @@ if(isset($_GET['error'])){
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="pendidikanTerakhir">Akreditasi</label>
+                        <label for="pendidikanTerakhir" style="font-size: 25px;">Akreditasi</label>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <label class="input-group-text" for="pendidikan">Akreditasi Kampus</label>
@@ -96,7 +96,7 @@ if(isset($_GET['error'])){
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="Usia">Usia</label>
+                        <label for="Usia" style="font-size: 25px;">Usia</label>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1">Usia</span>
@@ -105,14 +105,14 @@ if(isset($_GET['error'])){
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="Usia">Kemampuan Berbahasa inggris</label><br>
+                        <label for="Usia" style="font-size: 25px;">Kemampuan Berbahasa inggris</label><br>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="bahasa" id="bahasa1" value="ya" required>
-                            <label class="form-check-label" for="bahasa1">Ya</label>
+                            <label class="form-check-label" style="font-size: 23px;"  for="bahasa1">Ya</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="bahasa" id="bahasa2" value="tidak">
-                            <label class="form-check-label" for="bahasa2">Tidak</label>
+                            <label class="form-check-label" style="font-size: 23px;"  for="bahasa2">Tidak</label>
                         </div>
                     </div>
                     <input type="submit" name="submit" class="btn btn-primary btn-block" value="Submit"/>
