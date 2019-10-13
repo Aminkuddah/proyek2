@@ -19,12 +19,12 @@ if(isset($_GET['error'])){
             <div class="col-lg-2 p-3"></div>
             <div class="col-lg-8 p-3">
                 <div class="navbar navbar-light">
-                    <h1>Cari Pekerjaan</h1>
+                <a href="index.php" style="text-decoration: none; color:white;"><h1>Cari Pekerjaan</h1></a>
                     <h5 class="text-danger border border-danger rounded-pill pl-2 pr-2 pb-2 pt-2 bg-light"><?php echo $mess; ?></h5>
                     <div class="sosmed ">
-                        <a href="index.php"><img src="../img/fb.svg" class="sosmedLogo" height="35" width="35"></a>
-                        <a href="index.php"><img src="../img/twitter.svg" class="sosmedLogo" height="35" width="35"></a>
-                        <a href="index.php"><img src="../img/google.svg" class="sosmedLogo" height="35" width="35"></a>
+                        <a href="index.php"><img src="../img/facebook.png" class="sosmedLogo" height="35" width="35"></a>
+                        <a href="index.php"><img src="../img/twitter.png" class="sosmedLogo" height="35" width="35"></a>
+                        <a href="index.php"><img src="../img/wordpress.png" class="sosmedLogo" height="35" width="35"></a>
                         <a href="index.php"><img src="../img/linkedin.png" class="sosmedLogo" height="35" width="35"></a>
                     </div>
                 </div>
@@ -62,7 +62,7 @@ if(isset($_GET['error'])){
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1">IPK</span>
                             </div>
-                            <input type="numberDecimal" class="form-control" placeholder="Masukkan IPK anda" id="ipk" name="ipk" aria-label="Username" required>
+                            <input type="number" class="form-control" placeholder="Masukkan IPK anda" id="ipk" name="ipk" aria-label="Username" required>
                         </div>
                     </div>
                     <div class="form-group">
@@ -119,8 +119,56 @@ if(isset($_GET['error'])){
                 </form>
             </div>
         </div>
-    </div>
+    </div><br><br><br><br>
+    <footer class="footer">
+        <div class="atas container-fluid">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="namaWebsite col-md-2"><br>
+                    <h4 style="color:white;">Golek Kerjo</h4><br>
+                    <p><small>We connect university students with their own <span style="color:white;"><strong>Destiny</strong></span></small></p>
+                </div>
+                <div class="col-md-1"><br>
+                    <h4 style="color:white;">Why GK</h4>
+                    <a href="#"><p style="color: #9b9b9b;"><small>Graduates</small></p></a>
+                    <a href="#"><p style="color: #9b9b9b;"><small>Working</small></p></a>
+                    <a href="#"><p style="color: #9b9b9b;"><small>Tips</small></p></a>
+                    <a href="#"><p style="color: #9b9b9b;"><small>Company</small></p></a>
+                </div>
+                <div class="features col-md-1"><br>
+                    <h4 style="color:white;">Explore</h4>
+                    <div class="kontenFeatures">
+                        <a href="cariPekerjaan.php"><p style="color: #9b9b9b;"><small>Cari Pekerjaan</small></p></a>
+                        <a href="listPekerjaan.php"><p style="color: #9b9b9b;"><small>List Pekerjaan</small></p></a>
+                        <a href="listPerusahaan.php"><p style="color: #9b9b9b;"><small>List Perusahaan</small></p></a>
+                        <a href="contactUs.php"><p style="color: #9b9b9b;"><small>Contact Us</small></p></a>
+                        <a href="aboutUs.php"><p style="color: #9b9b9b;"><small>About Us</small></p></a>
+                    </div>
+                    
+                </div>
+                <div class="col-md-1"><br>
+                    <h4 style="color:white;">Follow</h4>
+                    <a href="#"><p style="color: #9b9b9b;"><small>Facebook</small></p></a>
+                    <a href="#"><p style="color: #9b9b9b;"><small>Twitter</small></p></a>
+                    <a href="#"><p style="color: #9b9b9b;"><small>LinkedIn</small></p></a>
 
-    <!-- <img src="../img/caripekerjaan.jpg" height="80%" width="100%" > -->
+                    <h4 style="color:white;">Need Help</h4>
+                    <a href="#"><p style="color: #9b9b9b;"><small>aminkuddah@gmail.com</small></p></a>
+                    <a href="#"><p style="color: #9b9b9b;"><small>085731729674</small></p></a>
+
+                </div>
+                <div class="col-md-1"><br>
+                    <h4 style="color:white;">Need Help</h4>
+                    <a href="#"><p style="color: #9b9b9b;"><small>aminkuddah@gmail.com</small></p></a>
+                    <a href="#"><p style="color: #9b9b9b;"><small>085731729674</small></p></a>
+                </div>
+            </div>
+        </div>
+        <div class="bawah subfooter clearfix">
+            <div class="" style="text-align: center;"><br>
+                <label class="namaWebsite">2019 Golek Kerjo. All Rights Reserved</label>
+            </div><br>
+        </div>
+    </footer>
 </body>
 </html>

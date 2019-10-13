@@ -1,9 +1,50 @@
+html, body{
+    background-image: url(../img/caripekerjaan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
 #home{
-    background-image:url(../img/caripekerjaan.jpg);
-    /* background-repeat: no-repeat; */
+    /* background-image:url(../img/caripekerjaan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-repeat: no-repeat;
     background-size: cover;
     height : 100vh; 
+    width: 100%;
     font-family: Kelly Slab;
     font-size: 30px;
     color: white;
+}
+
+.footer .atas{
+    width: 100%;
+    background-color: rgba(15, 15, 15, 15);
+}
+
+.footer .bawah{
+    width: 100%;
+    background-color: #000;
+}
+.atas .namaWebsite{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #9b9b9b;
+}
+.atas .features{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #9b9b9b;
+}
+.atas p:hover{
+    background-color: #fa6900;
+}
+/* .atas .features .kontenFeatures p:hover{
+    background-color: #fa6900;
+} */
+.bawah .namaWebsite{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #9b9b9b;
 }

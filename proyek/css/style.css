@@ -1,6 +1,14 @@
+html, body{
+    background-image: url(../img/wallpaper1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
 #home{
-    background-image:url(../img/tugas31.jpg);
-    /* opacity: 0.9; */
+    /* background-image:url(../img/tugas31.jpg);
+    background-color: #3D3E3D;
+    opacity: 0.9; */
     background-repeat: no-repeat;
     background-size: cover;
     height : 100vh; 
@@ -9,22 +17,47 @@
     font-size: 30px;
     color: white;
 }
+
+/* .namaWebsite{
+    font-family: Coluna;
+    font-size: 60px;
+} */
 .helloFresh{
     text-align: center;
+}
+
+.atas{
+    opacity: 0.70;
+}
+
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .sosmedLogo{
     filter: #50B28A;
 }
 
+.how .isi img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
 .card.kotak1{
     background-color: #C85141;
     opacity: 0.82;
     color: white;
-    font-family: lato light;
+}
+.card.kotak1 img{
+    margin-left: auto;
+    margin-right: auto;
 }
 .card.kotak1:hover{
-    background-color: #3D3E3D;
+    background-color: rgba(15, 15, 15, 0.9);
     opacity: 0.82;
     color: white;
 }
@@ -35,8 +68,12 @@
     color: white;
     font-family: lato bold;
 }
+.card.kotak2 img{
+    margin-left: auto;
+    margin-right: auto;
+}
 .card.kotak2:hover{
-    background-color: #3D3E3D;
+    background-color: rgba(15, 15, 15, 0.9);
     opacity: 0.82;
     color: white;
 }
@@ -46,8 +83,12 @@
     opacity: 0.82;
     color: white;
 }
+.card.kotak3 img{
+    margin-left: auto;
+    margin-right: auto;
+}
 .card.kotak3:hover{
-    background-color: #3D3E3D;
+    background-color: rgba(15, 15, 15, 0.9);
     opacity: 0.82;
     color: white;
 }
@@ -56,8 +97,16 @@
     opacity: 0.82;
     color: white;
 }
+.card.kotak4 img{
+    margin-left: auto;
+    margin-right: auto;
+}
+.card.kotak4.gambar{
+    height: 90%;
+    width: 90%;
+}
 .card.kotak4:hover{
-    background-color: #3D3E3D;
+    background-color: rgba(15, 15, 15, 0.9);
     opacity: 0.82;
     color: white;
 }
@@ -66,8 +115,43 @@
     opacity: 0.82;
     color: white;
 }
+.card.kotak5 img{
+    margin-left: auto;
+    margin-right: auto;
+}
 .card.kotak5:hover{
-    background-color: #3D3E3D;
+    background-color: rgba(15, 15, 15, 0.9);
     opacity: 0.82;
     color: white;
+}
+
+.footer .atas{
+    width: 100%;
+    background-color: rgba(15, 15, 15, 15);
+}
+
+.footer .bawah{
+    width: 100%;
+    background-color: #000;
+}
+.atas .namaWebsite{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #9b9b9b;
+}
+.atas .features{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #9b9b9b;
+}
+.atas p:hover{
+    background-color: #fa6900;
+}
+/* .atas .features .kontenFeatures p:hover{
+    background-color: #fa6900;
+} */
+.bawah .namaWebsite{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #9b9b9b;
 }

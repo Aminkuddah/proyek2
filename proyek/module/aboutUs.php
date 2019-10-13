@@ -6,64 +6,136 @@
 </head>
 <body>
     <div id="home" class="container-fluid">
-        <div class="row">    
+        <div class="row">
             <div class="col-lg-2 p-3"></div>
             <div class="col-lg-8 p-3">
                 <div class="navbar navbar-light">
                     <h1>About Us</h1>
                     <div class="sosmed ">
-                    <a href="index.php"><img src="../img/fb.svg" class="sosmedLogo" height="35" width="35"></a>
-                    <a href="index.php"><img src="../img/twitter.svg" class="sosmedLogo" height="35" width="35"></a>
-                    <a href="index.php"><img src="../img/google.svg" class="sosmedLogo" height="35" width="35"></a>
-                    <a href="index.php"><img src="../img/linkedin.png" class="sosmedLogo" height="35" width="35"></a>
+                        <a href="index.php"><img src="../img/facebook.png" class="sosmedLogo" height="35" width="35"></a>
+                        <a href="index.php"><img src="../img/twitter.png" class="sosmedLogo" height="35" width="35"></a>
+                        <a href="index.php"><img src="../img/wordpress.png" class="sosmedLogo" height="35" width="35"></a>
+                        <a href="index.php"><img src="../img/linkedin.png" class="sosmedLogo" height="35" width="35"></a>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-                <h3>Golek Kerjo</h3>
-                <h5 style="text-align:center">Golek kerjo adalah aplikasi karya mahasiswa Politeknik Negeri Malang yang memudahkan lulusan mahasiswa jurusan Teknologi Informasi untuk menentukan profesi kerja mereka setelah lulus nanti
-                Golek kerjo adalah aplikasi karya mahasiswa Politeknik Negeri Malang yang memudahkan lulusan mahasiswa jurusan Teknologi Informasi untuk menentukan profesi kerja mereka setelah lulus nanti</h5>
+        </div><br>
+        <div class="atas"><br>
+            <div class="row">
+                <!-- <img src="../img/4.jpg" style="height: 400px; width: 100%;" alt=""> -->
+                <div class="col-md-3"></div>
+                <div class="col-md-2">
+                    <h3>Golek Kerjo</h3>
+                </div>
+                <div class="col-md-4">
+                    <h5 style="text-align:gravity">Golek kerjo adalah aplikasi karya mahasiswa Politeknik Negeri Malang yang 
+                    memudahkan lulusan mahasiswa jurusan Teknologi Informasi untuk menentukan profesi kerja mereka setelah lulus nanti</h5>
+                </div>
+            </div><br>
+        </div><br><br>
+
+        <div class="tengah">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <label for="ourStory">Our Story</label>
+                    <h5 style="text-align:gravity">
+                    Jadi, aplikasi golek kerjo ini aplikasi karya mahasiswa Politeknik Negeri Malang yang
+                    memudahkan lulusan mahasiswa jurusan Teknologi Informasi untuk menentukan profesi kerja 
+                    mereka setelah lulus nanti. Dan juga untuk mencari referensi pekerjaan di perusahaan-perusahaan 
+                    pada bidang IT.</h5>
+                </div>
+            </div>
+        </div><br>
+
+        <div class="bawah">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <label for="ourStory">Our Difference</label>
+                    <h5 style="text-align:gravity">
+                    Perbedaan website Golek Kerjo dengan website lain yaitu terletak pada pemilihan posisi kerja, sekarang
+                    banyak website yang menyediakan informasi tentang lowongan pekerjaan dan lain-lain. pada website Golek Kerjo ini
+                    user dapat mencocokkan posisi kerja yang sesuai dengan passion dan nilai mata kuliah yang sudah ditempuh sebelumnya,
+                    dimana hal ini menjadi tolak ukur perekrutan perusahaan dalam mencari pekerja sesuai dengan bidang-bidang itu sendiri.</h5>
+                </div>
+            </div>
+        </div><br>
+
+        <div class="leader">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-2">
+                    <label for="ourStory">Leadership</label><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-3">   
+                    <img src="../img/avatar.png" class="gambar" alt=""><br>
+                    <label for="">Abdallah Darussalam Candra</label>
+                    <h5>CEO</h5>
+                </div>
+                <div class="col-md-3">   
+                    <img src="../img/avatar.png" class="gambar" alt=""><br>
+                    <label for="">Amin Anis Kuddah</label>
+                    <h5>CEO</h5>
+                </div>
+                <div class="col-md-3">   
+                    <img src="../img/avatar.png" class="gambar" alt=""><br>
+                        <label for="">Rahardhiyan Wahyu Putra</label>
+                        <h5>CEO</h5>
+                </div>
+            </div>
+        </div><br>
+    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <footer class="footer">
+        <div class="atas container-fluid">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="namaWebsite col-md-2"><br>
+                    <a style="text-decoration: none;" href="index.php"><h4 style="color:white;">Golek Kerjo</h4></a><br>
+                    <p><small>We connect university students with their own <span style="color:white;"><strong>Destiny</strong></span></small></p>
+                </div>
+                <div class="col-md-1"><br>
+                    <h4 style="color:white;">Why GK</h4>
+                    <a href="#"><p style="color: #9b9b9b;"><small>Graduates</small></p></a>
+                    <a href="#"><p style="color: #9b9b9b;"><small>Working</small></p></a>
+                    <a href="#"><p style="color: #9b9b9b;"><small>Tips</small></p></a>
+                    <a href="#"><p style="color: #9b9b9b;"><small>Company</small></p></a>
+                </div>
+                <div class="features col-md-1"><br>
+                    <h4 style="color:white;">Explore</h4>
+                    <a href="cariPekerjaan.php"><p style="color: #9b9b9b;"><small>Cari Pekerjaan</small></p></a>
+                    <a href="listPekerjaan.php"><p style="color: #9b9b9b;"><small>List Pekerjaan</small></p></a>
+                    <a href="listPerusahaan.php"><p style="color: #9b9b9b;"><small>List Perusahaan</small></p></a>
+                    <a href="contactUs.php"><p style="color: #9b9b9b;"><small>Contact Us</small></p></a>
+                    <a href="aboutUs.php"><p style="color: #9b9b9b;"><small>About Us</small></p></a>
+                </div>
+                <div class="col-md-1"><br>
+                    <h4 style="color:white;">Follow</h4>
+                    <a href="#"><p style="color: #9b9b9b;"><small>Facebook</small></p></a>
+                    <a href="#"><p style="color: #9b9b9b;"><small>Twitter</small></p></a>
+                    <a href="#"><p style="color: #9b9b9b;"><small>LinkedIn</small></p></a>
+
+                    <h4 style="color:white;">Need Help</h4>
+                    <a href="#"><p style="color: #9b9b9b;"><small>aminkuddah@gmail.com</small></p></a>
+                    <a href="#"><p style="color: #9b9b9b;"><small>085731729674</small></p></a>
+
+                </div>
+                <div class="col-md-1"><br>
+                    <h4 style="color:white;">Need Help</h4>
+                    <a href="#"><p style="color: #9b9b9b;"><small>aminkuddah@gmail.com</small></p></a>
+                    <a href="#"><p style="color: #9b9b9b;"><small>085731729674</small></p></a>
+                </div>
             </div>
         </div>
-        <div class="row pt-5 mt-5">
-            <div class="col-md-3"></div>
-            <div class="card telkom border border-info" style="width: 18rem; height: 34rem;">
-                <img src="../img/telkom.gif" class="card-img-top ml-5" style="width: 80%; height: 40%;">
-                <div class="card-body konten">
-                    <h3 class="card-title" style="color:black">Telkom Indonesia</h3>
-                    <h5 style="color:black">Phone : <br> 02180863539</h5>
-                    <h5 style="color:black">Address : <br> JL. Jendral Gatot Subroto Kav. 52 Jakarta Selatan DKI Jakarta</h5>
-                </div>
-                <div class="button mb-3 ml-3">
-                    <a href="https://www.telkom.co.id/" class="btn btn-primary">Tinjau Perusahaan</a>
-                </div>
-            </div>
-            <div class="card ml-5 ericsson border border-info" style="width: 18rem; height: 34rem;">
-                <img src="../img/ericsson.gif" class="card-img-top" style="width: 100%; height: 40%;">
-                <div class="card-body">
-                    <h3 class="card-title" style="color:black">Ericsson</h3>
-                    <h5 style="color:black">Phone : <br> 0217692222</h5>
-                    <h5 style="color:black;">Address : <br> Kalibata city Lt. 2 Jl. Sultan Iskandar  - TA Jakarta Barat 12310</h5>
-                </div>
-                <div class="button mb-3 ml-3">
-                    <a href="https://www.ericsson.com/en" class="btn btn-primary">Tinjau Perusahaan</a>
-                </div>
-            </div>
-            <div class="card ml-5 google border border-info" style="width: 18rem; height: 34rem;">
-                <img src="../img/google.gif" class="card-img-top" style="width: 100%; height: 30%;">
-                <div class="card-body mt-5">
-                    <h3 class="card-title" style="color:black">Google Indonesia</h3>
-                    <h5 style="color:black">Phone : <br> 0217692222</h5>
-                    <h5 style="color:black">Address : <br> Wisma Pondok Indah Lt. 2 Jl. Sultan Iskandar Muda V - TA Jakarta Selatan 12310 DKI Jakarta Indonesia</h5>
-                </div>
-                <div class="button mb-3 ml-3">
-                    <a href="https://careers.google.com" class="btn btn-primary">Tinjau Perusahaan</a>
-                </div>
-            </div>
+        <div class="bawah subfooter clearfix">
+            <div class="" style="text-align: center;"><br>
+                <label class="namaWebsite">2019 Golek Kerjo. All Rights Reserved</label>
+            </div><br>
         </div>
-    </div>
+    </footer>
 </body>
 </html>

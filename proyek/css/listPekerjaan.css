@@ -9,3 +9,34 @@
     font-size: 30px;
     color: white;
 }
+
+.footer .atas{
+    width: 100%;
+    background-color: rgba(15, 15, 15, 15);
+}
+
+.footer .bawah{
+    width: 100%;
+    background-color: #000;
+}
+.atas .namaWebsite{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #9b9b9b;
+}
+.atas .features{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #9b9b9b;
+}
+.atas p:hover{
+    background-color: #fa6900;
+}
+/* .atas .features .kontenFeatures p:hover{
+    background-color: #fa6900;
+} */
+.bawah .namaWebsite{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #9b9b9b;
+}

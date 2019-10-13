@@ -1,27 +1,70 @@
-#home{
-    background-image:url(../img/31.jpg);
-    opacity: 100.5;
-    /* background-color: #3D3E3D; */
+body{
+    background-image: url(../img/3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment:fixed;
+}
+
+#home{
+    /* background-image:url(../img/31.jpg); 
+    background-size: 100% 100%;
+    background-attachment:fixed; */
+
+    
+    opacity: 100.5;
+    /* background-color: #3D3E3D; */
+    /* background-repeat: no-repeat;
+    background-size: cover; */
     height : 100vh; 
     font-family: Kelly Slab;
     font-size: 30px;
     color: white;
 }
+#home .atas{
+    background-color: #343434;
+}
 
-.telkom{
-    background-image: url(../img/tugas4.jpeg);
-    opacity: 0.8;
-    margin-top: 3%;
+.leader .gambar{
+    border-radius: 50%;
+    border: 3px solid whitesmoke;
+    width: 250px;
+    height: 250px;
 }
-.ericsson{
-    background-image: url(../img/tugas4.jpeg);
-    opacity: 0.8;
-    margin-top: 3%;
+
+.footer{
+    /* height:50px; */
+    /* line-height:50px; */
+    /* background:#333;
+    color:#fff; */
 }
-.google{
-    background-image: url(../img/tugas4.jpeg);
-    opacity: 0.8;
-    margin-top: 3%;
+
+.footer .atas{
+    /* height: 300px; */
+    width: 100%;
+    background-color: rgba(15, 15, 15, 0.9);
+    /* background-color: #343434; */
+}
+.atas p:hover{
+    background-color: #fa6900;
+}
+
+.atas .namaWebsite{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #9b9b9b;
+}
+.atas .features{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #9b9b9b;
+}
+.bawah .namaWebsite{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #9b9b9b;
+}
+
+.footer .bawah{
+    width: 100%;
+    background-color: #000;
 }
