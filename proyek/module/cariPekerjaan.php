@@ -20,7 +20,9 @@ if(isset($_GET['error'])){
             <div class="col-lg-8 p-3">
                 <div class="navbar navbar-light">
                 <a href="index.php" style="text-decoration: none; color:white;"><h1>Cari Pekerjaan</h1></a>
-                    <h5 class="text-danger border border-danger rounded-pill pl-2 pr-2 pb-2 pt-2 bg-light"><?php echo $mess; ?></h5>
+                    <?php if($mess != ''){ ?>
+                        <h5 class="text-danger border border-danger rounded-pill pl-2 pr-2 pb-2 pt-2 bg-light"><?php echo $mess; ?></h5>
+                    <?php } ?>
                     <div class="sosmed ">
                         <a href="index.php"><img src="../img/facebook.png" class="sosmedLogo" height="35" width="35"></a>
                         <a href="index.php"><img src="../img/twitter.png" class="sosmedLogo" height="35" width="35"></a>
@@ -62,7 +64,7 @@ if(isset($_GET['error'])){
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1">IPK</span>
                             </div>
-                            <input type="number" class="form-control" placeholder="Masukkan IPK anda" id="ipk" name="ipk" aria-label="Username" required>
+                            <input type="numberDecimal" class="form-control" placeholder="Masukkan IPK anda" id="ipk" name="ipk" aria-label="Username" required>
                         </div>
                     </div>
                     <div class="form-group">

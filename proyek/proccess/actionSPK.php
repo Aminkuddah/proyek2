@@ -17,8 +17,8 @@ if (!empty($nama) && !empty($ipk) && !empty($pendidikan) && !empty($usia) && !em
         $error = urlencode("Usia anda diluar batas");
         header("Location: ../module/cariPekerjaan.php?error=$error");
     }else{
-        $error = urlencode("Berhasil");
-        header("Location: ../module/cariPekerjaan.php?error=$error");
+        // $error = urlencode("Berhasil");
+        // header("Location: ../module/cariPekerjaan.php?error=$error");
     }
 } else {
     $error = urlencode("Lengkapi semua data");
