@@ -50,12 +50,12 @@ if(isset($_GET['error'])){
                     <div class="form-group">
                         <label for="Usia" style="font-size: 25px;">Gender</label><br>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="gender" id="gender1" value="laki" required>
-                            <label class="form-check-label" style="font-size: 23px;" for="gender1">Laki-Laki</label>
+                            <input class="form-check-input" type="radio" name="gender" id="gender" value="Laki-laki" required>
+                            <label class="form-check-label" style="font-size: 23px;" for="gender">Laki-Laki</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="gender" id="gender2" value="perempuan" required>
-                            <label class="form-check-label" style="font-size: 23px;" for="gender2">Perempuan</label>
+                            <input class="form-check-input" type="radio" name="gender" id="gender" value="Perempuan" required>
+                            <label class="form-check-label" style="font-size: 23px;" for="gender">Perempuan</label>
                         </div>
                     </div>
                     <div class="form-group">
