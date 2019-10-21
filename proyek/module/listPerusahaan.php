@@ -71,6 +71,8 @@ if(isset($_GET['pesan'])){
                 </table>
             </div>
         </div>
-    </div>
+    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <?php include 'bahan.php';?>
 </body>
 </html>

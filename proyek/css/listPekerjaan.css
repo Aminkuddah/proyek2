@@ -1,9 +1,16 @@
-#home{
-    background-image:url(../img/listPekerjaan.jpg);
-    opacity: 100.5;
-    /* background-color: #3D3E3D; */
+body{
+    background-image: url(../img/listPekerjaan.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment:fixed;
+}
+
+#home{
+    /* background-image:url(../img/listPekerjaan.jpg); */
+    opacity: 100.5;
+    /* background-color: #3D3E3D;
+    background-repeat: no-repeat;
+    background-size: cover; */
     height : 100vh; 
     font-family: Kelly Slab;
     font-size: 30px;
