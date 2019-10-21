@@ -1,14 +1,14 @@
-#home{
-    background-image:url(../img/listperusahaan3.jpg);
-    /* background-repeat: no-repeat; */
+body{
+    background-image: url(../img/listperusahaan3.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
+    background-attachment:fixed;
+}
+
+#home{
+    opacity: 100.5;
     height : 100vh; 
     font-family: Kelly Slab;
     font-size: 30px;
     color: white;
 }
-
-/* .perusahaan1{
-    height: 50%;
-    width: 70%;
-} */
