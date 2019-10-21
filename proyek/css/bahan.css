@@ -1,0 +1,56 @@
+.footer .atas{
+    width: 100%;
+    background-color: rgba(15, 15, 15, 15);
+}
+
+.footer .bawah{
+    width: 100%;
+    background-color: #000;
+}
+.atas .namaWebsite{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #9b9b9b;
+}
+.atas .explore{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #9b9b9b;
+    text-decoration: none;
+}
+.atas .why{
+    color: #9b9b9b;
+}
+.atas .why:hover{
+    background-color: #fa6900;
+    color:white;
+}
+.atas .explore{
+    color: #9b9b9b;
+}
+.atas .explore:hover{
+    background-color: #fa6900;
+    color:white;
+}
+.atas .follow{
+    color: #9b9b9b;
+}
+.atas .follow:hover{
+    background-color: #fa6900;
+    color:white;
+}
+.atas .help{
+    color: #9b9b9b;
+}
+.atas .help:hover{
+    background-color: #fa6900;
+    color:white;
+}
+/* .atas .features .kontenFeatures p:hover{
+    background-color: #fa6900;
+} */
+.bawah .namaWebsite{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #9b9b9b;
+}

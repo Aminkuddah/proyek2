@@ -50,55 +50,6 @@
         <!-- </div> -->
         <br>
     </div><br><br><br><br><br><br><br><br><br>
-    <div class="footer">
-        <div class="atas container-fluid">
-            <div class="row">
-                <div class="col-md-3"></div>
-                <div class="namaWebsite col-md-2"><br>
-                    <h4 style="color:white;">Golek Kerjo</h4><br>
-                    <p><small>We connect university students with their own <span style="color:white;"><strong>Destiny</strong></span></small></p>
-                </div>
-                <div class="col-md-1"><br>
-                    <h4 style="color:white;">Why GK</h4>
-                    <a href="#"><p style="color: #9b9b9b;"><small>Graduates</small></p></a>
-                    <a href="#"><p style="color: #9b9b9b;"><small>Working</small></p></a>
-                    <a href="#"><p style="color: #9b9b9b;"><small>Tips</small></p></a>
-                    <a href="#"><p style="color: #9b9b9b;"><small>Company</small></p></a>
-                </div>
-                <div class="features col-md-1"><br>
-                    <h4 style="color:white;">Explore</h4>
-                    <div class="kontenFeatures">
-                        <a href="cariPekerjaan.php"><p style="color: #9b9b9b;"><small>Cari Pekerjaan</small></p></a>
-                        <a href="listPekerjaan.php"><p style="color: #9b9b9b;"><small>List Pekerjaan</small></p></a>
-                        <a href="listPerusahaan.php"><p style="color: #9b9b9b;"><small>List Perusahaan</small></p></a>
-                        <a href="contactUs.php"><p style="color: #9b9b9b;"><small>Contact Us</small></p></a>
-                        <a href="aboutUs.php"><p style="color: #9b9b9b;"><small>About Us</small></p></a>
-                    </div>
-                    
-                </div>
-                <div class="col-md-1"><br>
-                    <h4 style="color:white;">Follow</h4>
-                    <a href="#"><p style="color: #9b9b9b;"><small>Facebook</small></p></a>
-                    <a href="#"><p style="color: #9b9b9b;"><small>Twitter</small></p></a>
-                    <a href="#"><p style="color: #9b9b9b;"><small>LinkedIn</small></p></a>
-
-                    <h4 style="color:white;">Need Help</h4>
-                    <a href="#"><p style="color: #9b9b9b;"><small>aminkuddah@gmail.com</small></p></a>
-                    <a href="#"><p style="color: #9b9b9b;"><small>085731729674</small></p></a>
-
-                </div>
-                <div class="col-md-1"><br>
-                    <h4 style="color:white;">Need Help</h4>
-                    <a href="#"><p style="color: #9b9b9b;"><small>aminkuddah@gmail.com</small></p></a>
-                    <a href="#"><p style="color: #9b9b9b;"><small>085731729674</small></p></a>
-                </div>
-            </div>
-        </div>
-        <div class="bawah subfooter clearfix">
-            <div class="" style="text-align: center;"><br>
-                <label class="namaWebsite">2019 Golek Kerjo. All Rights Reserved</label>
-            </div><br>
-        </div>
-    </div>
+    <?php include 'bahan.php';?>
 </body>
 </html>
