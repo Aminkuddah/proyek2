@@ -57,7 +57,7 @@ if(isset($_GET['pesan'])){
                             <tr>
                                 <td class='align-middle'>Data Kosong</td>
                                 <td class='align-middle'>Data Kosong</td>
-                                <td class='align-middle'>Data Kosong</td>
+                                <td class='align-middle'>Data Kosongan</td>
                             <tr>
                         <?php
                         }
