@@ -37,6 +37,7 @@ if(isset($_GET['pesan'])){
                             <th class='align-middle'>#</th>
                             <th class='align-middle'>List Perusahaan</th>
                             <th class='align-middle'>Lokasi</th>
+                            <th class='align-middle'>Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -46,18 +47,21 @@ if(isset($_GET['pesan'])){
                         if(mysqli_num_rows($result) > 0){
                             $index = 1;
                             while($row = mysqli_fetch_assoc($result)){
+                                $id_file=$row["link"];
                                 ?>
                                 <tr>
                                     <td class='align-middle'><?php echo $index++; ?></td>
                                     <td class='align-middle'><?php echo $row["nama_perusahaan"]; ?></td>
                                     <td class='align-middle'><?php echo $row["lokasi"]; ?></td>
+                                    <td class='align-middle'><a href='<?php echo $id_file ?>' class='btn btn-primary'>Open Website</a></td>
                                 </tr>
                         <?php }
                         }else{ ?>
                             <tr>
                                 <td class='align-middle'>Data Kosong</td>
                                 <td class='align-middle'>Data Kosong</td>
-                                <td class='align-middle'>Data Kosongan</td>
+                                <td class='align-middle'>Data Kosong</td>
+                                <td class='align-middle'>Data Kosong</td>
                             <tr>
                         <?php
                         }
