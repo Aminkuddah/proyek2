@@ -64,7 +64,7 @@ if(isset($_GET['error'])){
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1">IPK</span>
                             </div>
-                            <input type="numberDecimal" class="form-control" placeholder="Masukkan IPK anda" id="ipk" name="ipk" aria-label="Username" required>
+                            <input type="number" step="0.01" class="form-control" placeholder="Masukkan IPK anda" id="ipk" name="ipk" aria-label="Username" required>
                         </div>
                     </div>
                     <div class="form-group">
@@ -75,10 +75,10 @@ if(isset($_GET['error'])){
                             </div>
                             <select class="custom-select" id="pendidikanTerakhir" name="pendidikanTerakhir" required>
                                 <option value="">Pilih pendidikan terakhir anda</option>
-                                <option value="sd">SD</option>
-                                <option value="smp">SMP</option>
-                                <option value="sma">SMA</option>
-                                <option value="sarjana">SARJANA</option>
+                                <option value="0.25">D1</option>
+                                <option value="0.5">D2</option>
+                                <option value="0.75">D3</option>
+                                <option value="1">D4 / S1</option>
                             </select>
                         </div>
                     </div>
@@ -90,10 +90,10 @@ if(isset($_GET['error'])){
                             </div>
                             <select class="custom-select" id="akreditasi" name="akreditasi" required>
                                 <option value="">Pilih pendidikan terakhir anda</option>
-                                <option value="">A</option>
-                                <option value="">B</option>
-                                <option value="">C</option>
-                                <option value="">Tidak Terakreditasi</option>
+                                <option value="1">A</option>
+                                <option value="0.75">B</option>
+                                <option value="0.5">C</option>
+                                <option value="0.25">Tidak Terakreditasi</option>
                             </select>
                         </div>
                     </div>
@@ -109,11 +109,11 @@ if(isset($_GET['error'])){
                     <div class="form-group">
                         <label for="Usia" style="font-size: 25px;">Kemampuan Berbahasa inggris</label><br>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="bahasa" id="bahasa1" value="ya" required>
+                            <input class="form-check-input" type="radio" name="bahasa" id="bahasa1" value="1" required>
                             <label class="form-check-label" style="font-size: 23px;"  for="bahasa1">Ya</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="bahasa" id="bahasa2" value="tidak">
+                            <input class="form-check-input" type="radio" name="bahasa" id="bahasa2" value="0">
                             <label class="form-check-label" style="font-size: 23px;"  for="bahasa2">Tidak</label>
                         </div>
                     </div>
