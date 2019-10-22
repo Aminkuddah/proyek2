@@ -72,17 +72,17 @@
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-3">   
-                    <img src="../img/avatar.png" class="gambar" alt=""><br>
+                    <img src="../img/abda.jpeg" class="gambar" alt=""><br>
                     <label for="">Abdallah Darussalam Candra</label>
                     <h5>CEO</h5>
                 </div>
                 <div class="col-md-3">   
-                    <img src="../img/avatar.png" class="gambar" alt=""><br>
+                    <img src="../img/amin.jpeg" class="gambar" alt=""><br>
                     <label for="">Amin Anis Kuddah</label>
                     <h5>CEO</h5>
                 </div>
                 <div class="col-md-3">   
-                    <img src="../img/avatar.png" class="gambar" alt=""><br>
+                    <img src="../img/adhe.jpeg" class="gambar" alt=""><br>
                         <label for="">Rahardhiyan Wahyu Putra</label>
                         <h5>CEO</h5>
                 </div>

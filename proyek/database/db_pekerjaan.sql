@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 21, 2019 at 05:57 AM
+-- Generation Time: Oct 21, 2019 at 10:24 AM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 7.2.3
 
@@ -82,16 +82,23 @@ INSERT INTO `tb_fk_perusahaan_kerja` (`id_tabel`, `fk_pekerjaan`, `fk_perusahaan
 CREATE TABLE `tb_history` (
   `id_history` int(11) NOT NULL,
   `nama` varchar(80) DEFAULT NULL,
-  `hasil1` varchar(5) DEFAULT NULL,
-  `hasil2` varchar(5) DEFAULT NULL,
-  `hasil3` varchar(5) DEFAULT NULL,
+  `hasil1` int(11) DEFAULT NULL,
+  `hasil2` int(11) DEFAULT NULL,
+  `hasil3` int(11) DEFAULT NULL,
   `usia` int(5) DEFAULT NULL,
-  `gender` enum('0','1') DEFAULT NULL,
-  `b_inggris` enum('0','1') DEFAULT NULL,
-  `ipk` varchar(5) DEFAULT NULL,
-  `penTerakhir` varchar(5) DEFAULT NULL,
-  `akreditasi` varchar(5) DEFAULT NULL
+  `gender` enum('Laki-laki','Perempuan') DEFAULT NULL,
+  `b_inggris` enum('Ya','TIdak') DEFAULT NULL,
+  `ipk` double DEFAULT NULL,
+  `penTerakhir` varchar(50) DEFAULT NULL,
+  `akreditasi` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tb_history`
+--
+
+INSERT INTO `tb_history` (`id_history`, `nama`, `hasil1`, `hasil2`, `hasil3`, `usia`, `gender`, `b_inggris`, `ipk`, `penTerakhir`, `akreditasi`) VALUES
+(1, 'Joko', 8, 6, 2, 30, 'Laki-laki', 'Ya', 3.56, 'D3', 'A');
 
 -- --------------------------------------------------------
 
@@ -102,7 +109,7 @@ CREATE TABLE `tb_history` (
 CREATE TABLE `tb_pekerjaan` (
   `id_kategori` int(11) NOT NULL,
   `nama_kategori` varchar(45) DEFAULT NULL,
-  `pendidikan_terkahir` double DEFAULT NULL,
+  `pendidikan_terakhir` double DEFAULT NULL,
   `ipk` double DEFAULT NULL,
   `usia` double DEFAULT NULL,
   `akreditasi` double DEFAULT NULL,
@@ -113,7 +120,7 @@ CREATE TABLE `tb_pekerjaan` (
 -- Dumping data for table `tb_pekerjaan`
 --
 
-INSERT INTO `tb_pekerjaan` (`id_kategori`, `nama_kategori`, `pendidikan_terkahir`, `ipk`, `usia`, `akreditasi`, `b_inggris`) VALUES
+INSERT INTO `tb_pekerjaan` (`id_kategori`, `nama_kategori`, `pendidikan_terakhir`, `ipk`, `usia`, `akreditasi`, `b_inggris`) VALUES
 (1, 'UI/UX Designer', 0.3, 0.25, 0.25, 0.15, 0.05),
 (2, 'Website Programmer', 0.25, 0.25, 0.1, 0.2, 0.2),
 (3, 'Programmer', 0.3, 0.25, 0.15, 0.15, 0.15),
@@ -191,7 +198,10 @@ ALTER TABLE `tb_fk_perusahaan_kerja`
 -- Indexes for table `tb_history`
 --
 ALTER TABLE `tb_history`
-  ADD PRIMARY KEY (`id_history`);
+  ADD PRIMARY KEY (`id_history`),
+  ADD KEY `fk_kategori_pekerjaan1` (`hasil1`),
+  ADD KEY `fk_kategori_pekerjaan2` (`hasil2`),
+  ADD KEY `fk_kategori_pekerjaan3` (`hasil3`);
 
 --
 -- Indexes for table `tb_pekerjaan`
@@ -219,7 +229,7 @@ ALTER TABLE `tb_fk_perusahaan_kerja`
 -- AUTO_INCREMENT for table `tb_history`
 --
 ALTER TABLE `tb_history`
-  MODIFY `id_history` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_history` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `tb_pekerjaan`
@@ -243,6 +253,14 @@ ALTER TABLE `tb_perusahaan`
 ALTER TABLE `tb_fk_perusahaan_kerja`
   ADD CONSTRAINT `fk_pekerjaan` FOREIGN KEY (`fk_pekerjaan`) REFERENCES `tb_pekerjaan` (`id_kategori`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `fk_perusahaan` FOREIGN KEY (`fk_perusahaan`) REFERENCES `tb_perusahaan` (`id_perusahaan`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `tb_history`
+--
+ALTER TABLE `tb_history`
+  ADD CONSTRAINT `fk_kategori_pekerjaan1` FOREIGN KEY (`hasil1`) REFERENCES `tb_pekerjaan` (`id_kategori`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `fk_kategori_pekerjaan2` FOREIGN KEY (`hasil2`) REFERENCES `tb_pekerjaan` (`id_kategori`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `fk_kategori_pekerjaan3` FOREIGN KEY (`hasil3`) REFERENCES `tb_pekerjaan` (`id_kategori`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

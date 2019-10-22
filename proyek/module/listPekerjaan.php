@@ -30,39 +30,31 @@ if(isset($_GET['pesan'])){
             </div>
         </div>
         <div class="container mt-3 border border-success rounded bg-light">
-            <div class="row m-3">
-                <table class="table table-stripped text-center" id="table_id">
-                    <thead>
+            <div class="row m-3"></div>
+            <h2 style="color:black;">List Pekerjaan</h2>
+                <?php
+                    $query = "SELECT * FROM tb_pekerjaan";
+                    $result = mysqli_query($con, $query);
+                    if(mysqli_num_rows($result) > 0){
+                        $index = 1;
+                        while($row = mysqli_fetch_assoc($result)){
+                            ?>
+
+                            <div class="card border">
+                                <h2 style="color:black;"><?php echo $index++; ?>  <?php echo $row["nama_kategori"]; ?>
+                                <button class="bg bg-warning" style="color:white; float:right; width:20%;">tinjau</button></h2>
+                            </div>
+                    <?php }
+                    }else{ ?>
                         <tr>
-                            <th class='align-middle'>#</th>
-                            <th class='align-middle'>List Pekerjaan</th>
-                        </tr>
-                    </thead>
-                    <tbody>
+                            <td class='align-middle'>Data Kosong</td>
+                            <td class='align-middle'>Data Kosong</td>
+                        <tr>
                     <?php
-                        $query = "SELECT * FROM tb_pekerjaan";
-                        $result = mysqli_query($con, $query);
-                        if(mysqli_num_rows($result) > 0){
-                            $index = 1;
-                            while($row = mysqli_fetch_assoc($result)){
-                                ?>
-                                <tr>
-                                    <td class='align-middle'><?php echo $index++; ?></td>
-                                    <td class='align-middle'><?php echo $row["nama_kategori"]; ?></td>
-                                </tr>
-                        <?php }
-                        }else{ ?>
-                            <tr>
-                                <td class='align-middle'>Data Kosong</td>
-                                <td class='align-middle'>Data Kosong</td>
-                            <tr>
-                        <?php
-                        }
-                    mysqli_close($con); 
-                    ?>
-                    </tbody>
-                </table>
-            </div>
+                    }
+                mysqli_close($con); 
+                ?>
+            
         </div>
     </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <?php include 'bahan.php';?>

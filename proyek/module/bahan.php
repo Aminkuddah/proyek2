@@ -24,7 +24,7 @@
                     <a style="text-decoration: none;" href="cariPekerjaan.php"><p class="explore"><small>Cari Pekerjaan</small></p></a>
                     <a style="text-decoration: none;" href="listPekerjaan.php"><p class="explore"><small>List Pekerjaan</small></p></a>
                     <a style="text-decoration: none;" href="listPerusahaan.php"><p class="explore"><small>List Perusahaan</small></p></a>
-                    <a style="text-decoration: none;" href="contactUs.php"><p class="explore"><small>Contact Us</small></p></a>
+                    <a style="text-decoration: none;" href="history.php"><p class="explore"><small>History</small></p></a>
                     <a style="text-decoration: none;" href="aboutUs.php"><p class="explore"><small>About Us</small></p></a>
                     
                 </div>

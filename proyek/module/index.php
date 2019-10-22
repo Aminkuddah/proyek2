@@ -71,15 +71,14 @@ if(isset($_GET['pesan'])){
             <div class="col-md-3"></div>
                 <div class="col-md-2">
                     <div class="row">
-                        <a href="contactUs.php" style="text-decoration: none;">
-                            <div class="card kotak1" type="button" style="width: 100%; height:100%">
-                                <img src="../img/contact.png" class="card-img-top mt-3" style="height: 30%; width: 30%;">
-                                    <h5 class="card-title pl-2 mt-3">Contact Us</h5>
+                        <a href="listPekerjaan.php" style="text-decoration: none;">
+                            <div class="card kotak4" type="button" style="width: 100%; height:100%">
+                                <img src="../img/job.png" class="card-img-top mt-3" style="height: 30%; width: 30%;">
+                                <h5 class="card-title pl-2 mt-3">List Pekerjaan</h5>
                             </div>
                         </a>
                     </div>
-                    <pre></pre>
-                    <pre></pre>
+                    <pre></pre><pre></pre>
 
                     <div class="row">
                         <a href="listPerusahaan.php" style="text-decoration: none;">
@@ -104,10 +103,10 @@ if(isset($_GET['pesan'])){
 
                 <div class="col-md-2">
                     <div class="row">
-                        <a href="listPekerjaan.php" style="text-decoration: none;">
-                            <div class="card kotak4" type="button" style="width: 100%; height:100%">
-                                <img src="../img/job.png" class="card-img-top mt-3" style="height: 30%; width: 30%;">
-                                <h5 class="card-title pl-2 mt-3">List Pekerjaan</h5>
+                        <a href="history.php" style="text-decoration: none;">
+                            <div class="card kotak1" type="button" style="width: 100%; height:100%">
+                                <img src="../img/history.png" class="card-img-top mt-3" style="height: 30%; width: 30%;">
+                                    <h5 class="card-title pl-2 mt-3">History</h5>
                             </div>
                         </a>
                     </div>
