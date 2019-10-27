@@ -71,7 +71,7 @@
         </div><br>
 
         <div id="flip">
-            <button class="btn btn-danger" style="width:20%; font-family:lato;">Leader</button>
+            <button class="btn btn-danger" style="width:20%; font-family:lato;">Our Leader</button>
         </div>
         <div id="panel">
             <div class="row">
@@ -102,7 +102,6 @@
     </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <div class="container">
-		<!-- <h1>Classy Contact Form</h1> -->
 		<div class="left-w3">
 			<h2>Contact Us!</h2>
 			<form action="#" method="post">
@@ -130,34 +129,16 @@
 			</form>
 		</div>
 		<div class="right-w3ls">
-			<!-- <h3 class="w3ls">Subscribe</h3>
-			<form action="#" method="post">
-				<div class="agile1">
-					<h3>Email Address</h3>
-					<input type="text" name="telephone" class="telephone" placeholder="" required="">
-				</div>
-				<input type="submit"  class="subscribe" value="Subscribe">
-			</form> -->
-			<h3 class="w3ls">Our Location</h3>
-			<div class="agile1">
-				<h3>Reach Us</h3>
-				<div class="map">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.9503398796587!2d-73.9940307!3d40.719109700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a27e2f24131%3A0x64ffc98d24069f02!2sCANADA!5e0!3m2!1sen!2sin!4v1441710758555"></iframe>
-				</div>	
-			</div>
-			<!-- <h3 class="w3ls">Stay In Touch</h3>
-			<div class="agile1">
-				<h3>Social Icons</h3>
-				<div class="socialicons w3">
-					<ul>
-						<li><a class="facebook" href="#"></a></li>
-						<li><a class="twitter" href="#"></a></li>
-						<li><a class="google" href="#"></a></li>
-						<li><a class="pinterest" href="#"></a></li>
-						<li><a class="linkedin" href="#"></a></li>
-					</ul>
-				</div>
-			</div> -->
+            </div> -->
+            
+            <h3 class="w3ls">Our Location</h3>
+            <div class="agile1">
+                <h3>Reach Us</h3>
+                <div class="map">
+                    <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=politeknik%20negeri%20malang&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    <a href="https://www.embedgooglemap.net/blog/elementor-pro-discount-code-review/"></a>
+                </div>
+            </div>
 		</div>
 		<div class="clear"></div>	
 	</div>
