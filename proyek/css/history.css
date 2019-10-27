@@ -1,5 +1,6 @@
 html, body{
-    background-image: url(../img/maps1.jpg);
+    background-image: url(../img/maps.jpg);
+    /* opacity: 0.9; */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment:fixed;

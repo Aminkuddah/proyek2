@@ -40,9 +40,12 @@ if(isset($_GET['pesan'])){
                         while($row = mysqli_fetch_assoc($result)){
                             ?>
 
-                            <div class="card border">
+                            <div class="tinjau card border">
                                 <h2 style="color:black;"><?php echo $index++; ?>  <?php echo $row["nama_kategori"]; ?>
                                 <button class="bg bg-warning" style="color:white; float:right; width:20%;">tinjau</button></h2>
+                            </div>
+                            <div class="konten">
+                                <p style="color:black;"><?php echo $row["keterangan"]; ?> </p>
                             </div>
                     <?php }
                     }else{ ?>
@@ -57,6 +60,15 @@ if(isset($_GET['pesan'])){
             
         </div>
     </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <script> 
+        $(document).ready(function(){
+            $(".tinjau").click(function(){
+                $(".konten").slideToggle("slow");
+            });
+        });
+    </script>
+
     <?php include 'bahan.php';?>
 </body>
 </html>

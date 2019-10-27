@@ -19,7 +19,8 @@ if(isset($_GET['pesan'])){
             <div class="col-lg-2 p-3"></div>
             <div class="col-lg-8 p-3">
                 <div class="navbar navbar-light">
-                    <h1 class="namaWebsite">Golek Kerjo</h1>
+                    <!-- <h1 class="namaWebsite">Golek Kerjo</h1> -->
+                    <img src="../img/judul1.png" alt="">
                     <div class="sosmed ">
                         <a href="index.php"><img src="../img/facebook.png" class="sosmedLogo" height="35" width="35"></a>
                         <a href="index.php"><img src="../img/twitter.png" class="sosmedLogo" height="35" width="35"></a>
@@ -37,10 +38,10 @@ if(isset($_GET['pesan'])){
         <div class="row">
             <div class="col-md-2"></div>
             <div class="atas col-md-8" style="height: 3%; width: 80%;">
-                <img src="../img/41.jpg" class="card-img-top mt-3" >
+                <img src="../img/atas2.jpg" class="card-img-top mt-3" >
                 <div class="centered">
-                    <h2 class="teks">Find your job</h2>
-                    <h5>Halo fresh graduate polinema, Selamat datang di website resmi Golek Kerjo 
+                    <h1 class="teks">Find your <span style="color:brown; font-family:pricedown; text-align: left;">job</span></h1>
+                    <h5 style="font-family:lato;">Halo fresh graduate polinema, Selamat datang di website resmi Golek Kerjo 
                     Golek kerjo adalah aplikasi karya mahasiswa Politeknik Negeri Malang yang 
                     memudahkan lulusan mahasiswa jurusan Teknologi Informasi untuk menentukan 
                     profesi kerja mereka setelah lulus nanti</h5>
@@ -48,7 +49,7 @@ if(isset($_GET['pesan'])){
             </div>
         </div><br><br>
 
-        <section class="how">
+        <div class="how">
                 <h1 class="" style="text-align:center;">How it works</h1>
             <div class="isi row container-fluid" style="text-align:center;">
                 <div class="col-md-3"></div>
@@ -57,15 +58,15 @@ if(isset($_GET['pesan'])){
                     <h5 style="text-align:left;">Mengisi form pada halaman cari pekerjaan</h5>
                 </div>
                 <div class="col-md-2">
-                    <img src="../img/form.png">
+                    <img src="../img/form1.png">
                     <h5 style="text-align:left;">Data akan di proses sesuai dengan form yang telah diisi</h5>
                 </div>
                 <div class="col-md-2">
-                    <img src="../img/form.png">
+                    <img src="../img/form2.png">
                     <h5 style="text-align:left;">Hasil Pekerjaan yang cocok sesuai dengan form</h5>
                 </div>
             </div>
-        </section><br><br>
+        </div><br><br>
 
         <div class="row">
             <div class="col-md-3"></div>
