@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="col-md-3"></div>
                 <div class="namaWebsite col-md-2"><br>
-                    <h4 style="color:white;">Golek Kerjo</h4><br>
+                    <img src="../img/judul1.png" style="width:90%;" alt="">
                     <p><small>We connect university students with their own <span style="color:white;"><strong>Destiny</strong></span></small></p>
                 </div>
                 <div class="col-md-1"><br>

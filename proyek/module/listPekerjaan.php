@@ -42,11 +42,16 @@ if(isset($_GET['pesan'])){
 
                             <div class="tinjau card border">
                                 <h2 style="color:black;"><?php echo $index++; ?>  <?php echo $row["nama_kategori"]; ?>
-                                <button class="bg bg-warning" style="color:white; float:right; width:20%;">tinjau</button></h2>
+                                <button type="button" id="read<?php echo $index ?>" onClick="read(<?php echo $index ?>)" class="bg bg-warning" style="color:white; float:right; width:20%;">Read More</button></h2>
                             </div>
-                            <div class="konten">
+                            <!-- <div class="konten">
                                 <p style="color:black;"><?php echo $row["keterangan"]; ?> </p>
-                            </div>
+                            </div> -->
+
+                            <!-- <h1 style="color:black">Lorem Ipsum</h1> -->
+                            <p style="color:black">
+                                <span style="display:none" class="more" id="more<?php echo $index ?>"><?php echo $row["keterangan"]; ?></span></p>
+                            <!-- <button type="button" id="read" onClick="read()">Read More</button> -->
                     <?php }
                     }else{ ?>
                         <tr>
@@ -67,6 +72,27 @@ if(isset($_GET['pesan'])){
                 $(".konten").slideToggle("slow");
             });
         });
+    </script>
+
+    <script type="text/javascript">
+        // var i=0;
+        let isOpen = false;
+
+        function read(i){
+            let idRead = "read" + i;
+            let idMore = "more" + i;
+
+            if(!isOpen){
+                document.getElementById(idMore).style.display = "inline";
+                document.getElementById(idRead).innerHTML = "Read less";
+                isOpen = true;
+            }
+            else{
+                document.getElementById(idMore).style.display = "none";
+                document.getElementById(idRead).innerHTML = "Read more";
+                isOpen = false;
+            }
+        }
     </script>
 
     <?php include 'bahan.php';?>

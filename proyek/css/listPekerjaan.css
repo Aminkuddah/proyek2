@@ -1,5 +1,5 @@
 body{
-    background-image: url(../img/listPekerjaan.jpg);
+    background-image: url(../img/gradien1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment:fixed;
@@ -28,4 +28,13 @@ body{
     width: 250px;
     height: 250px; */
     color: blue;
+}
+
+#more{
+    display: none;
+}
+button{
+    border: none;
+    outline:none;
+
 }
