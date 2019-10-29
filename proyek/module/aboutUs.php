@@ -1,4 +1,13 @@
-<!DOCTYPE html>
+<?php
+include '../helper/connection.php';
+
+if(isset($_GET['error'])){
+    $mess="{$_GET['error']}";
+}else{
+    $mess="";
+}
+?>
+
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -36,6 +45,9 @@
                     <h3>Golek Kerjo</h3>
                 </div>
                 <div class="col-md-4">
+                <?php if($mess != ''){ ?>
+                        <h5 class="text-danger border border-danger rounded-pill pl-2 pr-2 pb-2 pt-2 bg-light"><?php echo $mess; ?></h5>
+                    <?php } ?>
                     <h5 style="text-align:gravity">Golek kerjo adalah aplikasi karya mahasiswa Politeknik Negeri Malang yang 
                     memudahkan lulusan mahasiswa jurusan Teknologi Informasi untuk menentukan profesi kerja mereka setelah lulus nanti</h5>
                 </div>
@@ -104,26 +116,26 @@
     <div class="container">
 		<div class="left-w3">
 			<h2>Contact Us!</h2>
-			<form action="#" method="post">
+			<form action="../proccess/actionSendMail.php" method="POST">
 				<div class="agile1">
 					<h3>Name</h3>
-					<input type="text" name="name" class="name" placeholder="" required="">
+					<input type="text" name="name" id="name" class="name" placeholder="" required="">
 				</div>
 				<div class="agile1">
 					<h3>Company</h3>
-					<input type="text" name="company" class="company" placeholder="" required="">
+					<input type="text" name="company" id="company" class="company" placeholder="" required="">
 				</div>
 				<div class="agile1">
 					<h3>Telephone</h3>
-					<input type="text" name="telephone" class="telephone" placeholder="" required="">
+					<input type="text" name="telephone" id="telephone" class="telephone" placeholder="" required="">
 				</div>
 				<div class="agile1">
 					<h3>Email</h3>
-					<input type="text" name="email" class="email" placeholder="" required="">
+					<input type="text" name="email" id="email" class="email" placeholder="" required="">
 				</div>
 				<div class="agile1">
 					<h3>Message</h3>
-					<textarea  name="your message" placeholder=""  required=""></textarea>
+					<textarea  name="your_message" id="your_message" placeholder=""  required=""></textarea>
 				</div>	
 				<input type="submit" value="Send Message">
 			</form>
