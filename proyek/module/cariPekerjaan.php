@@ -109,11 +109,11 @@ if(isset($_GET['error'])){
                     <div class="form-group">
                         <label for="Usia" style="font-size: 25px;">Kemampuan Berbahasa inggris</label><br>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="bahasa" id="bahasa1" value="1" required>
+                            <input class="form-check-input" type="radio" name="bahasa" id="bahasa" value="1" required>
                             <label class="form-check-label" style="font-size: 23px;"  for="bahasa1">Ya</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="bahasa" id="bahasa2" value="0">
+                            <input class="form-check-input" type="radio" name="bahasa" id="bahasa" value="2">
                             <label class="form-check-label" style="font-size: 23px;"  for="bahasa2">Tidak</label>
                         </div>
                     </div>
