@@ -141,8 +141,6 @@ if(isset($_GET['error'])){
 			</form>
 		</div>
 		<div class="right-w3ls">
-            </div> -->
-            
             <h3 class="w3ls">Our Location</h3>
             <div class="agile1">
                 <h3>Reach Us</h3>
