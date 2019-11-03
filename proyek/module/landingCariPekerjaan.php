@@ -36,88 +36,324 @@ if(isset($_GET['error'])){
                 </div>
             </div>
         </div>
-
-        <div class="row pt-5 mt-5">
+        <!-- <div class="row">
             <div class="col-md-1"></div>
-            <div class="card telkom border border-info" style="width: 30rem;">
-                <div class="card-body konten">
-                    <h3 class="card-title" style="color:black">Nama Pekerjaan</h3>
-                    <hr>
-                    <p style="color:black">Deskripsi <br> Ini Deskripsi Pekerjaannya</p>
-                    <p style="color:black">Syarat pekerjaan <br> ini sayrat pekerjaannya</p>
-                </div>
-                <div class="accordion" id="accordionExample">
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h2 class="mb-0">
-                                <button class="btn btn-success" type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne">Lihat Lowongan Perusahaan</button>									
-                            </h2>
-                        </div>
-                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                            <div class="card-body">
-                                <p>Perusahaan 1</a></p>
+            <div class="row pt-5">
+                <div class="col-md-1"></div>
+                <div class="card telkom border border-info" style="width: 100rem;">
+                    <div class="card-body konten">
+                        <h3 class="card-title" style="color:black">Nama Pekerjaan</h3>
+                        <hr>
+                        <p style="color:black">Deskripsi <br> Ini Deskripsi Pekerjaannya</p>
+                        <p style="color:black">Syarat pekerjaan <br> ini sayrat pekerjaannya</p>
+                    </div>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-success" type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne">Lihat Lowongan Perusahaan</button>									
+                                </h2>
                             </div>
-                            <div class="card-body">
-                                <p>Perusahaan 1</a></p>
-                            </div>
-                            <div class="card-body">
-                                <p>Perusahaan 1</a></p>
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="logoPerusahaan pl-3">
+                                            <img src="../img/logo perusahaan/1/Radya Labs.png" alt="" style="height:70px; width:70px;">
+                                        </div><br>
+                                        <div class="namaPerusahaan col-md-10">
+                                            <strong><Label class="pt-2" style="font-size:35px; text-align:left">Ini Nama Perusahaan</Label></strong>
+                                        </div><br><br><br>
+                                        <div class="deskripsiPerusahaan col-md-12">
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam perferendis, similique ratione maxime cumque quidem sapiente eius consequatur illo officiis ea, molestias, culpa quaerat temporibus obcaecati rerum excepturi adipisci dignissimos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p>Link Website</a></p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card telkom border border-info ml-5" style="width: 30rem;">
-                <div class="card-body konten">
-                    <h3 class="card-title" style="color:black">Nama Pekerjaan</h3>
-                    <hr>
-                    <p style="color:black">Deskripsi <br> Ini Deskripsi Pekerjaannya</p>
-                    <p style="color:black">Syarat pekerjaan <br> ini sayrat pekerjaannya</p>
-                </div>
-                <div class="accordion" id="accordionExample">
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h2 class="mb-0">
-                                <button class="btn btn-success" type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne">Lihat Lowongan Perusahaan</button>									
-                            </h2>
-                        </div>
-                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                            <div class="card-body">
-                                <p>Perusahaan 1</a></p>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="row pt-5">
+                <div class="col-md-1"></div>
+                <div class="card telkom border border-info" style="width: 100rem;">
+                    <div class="card-body konten">
+                        <h3 class="card-title" style="color:black">Nama Pekerjaan</h3>
+                        <hr>
+                        <p style="color:black">Deskripsi <br> Ini Deskripsi Pekerjaannya</p>
+                        <p style="color:black">Syarat pekerjaan <br> ini sayrat pekerjaannya</p>
+                    </div>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-success" type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo">Lihat Lowongan Perusahaan</button>									
+                                </h2>
                             </div>
-                            <div class="card-body">
-                                <p>Perusahaan 1</a></p>
-                            </div>
-                            <div class="card-body">
-                                <p>Perusahaan 1</a></p>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="row">
+                                    <div class="logoPerusahaan pl-3">
+                                            <img src="../img/logo perusahaan/1/Radya Labs.png" alt="" style="height:70px; width:70px;">
+                                        </div><br>
+                                        <div class="namaPerusahaan col-md-10">
+                                            <strong><Label class="pt-2" style="font-size:35px; text-align:left">Ini Nama Perusahaan</Label></strong>
+                                        </div><br><br><br>
+                                        <div class="deskripsiPerusahaan col-md-12">
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam perferendis, similique ratione maxime cumque quidem sapiente eius consequatur illo officiis ea, molestias, culpa quaerat temporibus obcaecati rerum excepturi adipisci dignissimos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p>Link Website</a></p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card telkom border border-info ml-5" style="width: 30rem;">
-                <div class="card-body konten">
-                    <h3 class="card-title" style="color:black">Nama Pekerjaan</h3>
-                    <hr>
-                    <p style="color:black">Deskripsi <br> Ini Deskripsi Pekerjaannya</p>
-                    <p style="color:black">Syarat pekerjaan <br> ini sayrat pekerjaannya</p>
-                </div>
-                <div class="accordion" id="accordionExample">
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h2 class="mb-0">
-                                <button class="btn btn-success" type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne">Lihat Lowongan Perusahaan</button>									
-                            </h2>
+        </div> -->
+        <!-- <div class="row cardPekerjaan">
+            <div class="col-md-1"></div>
+            <div class="row pt-5">
+                <div class="col-md-1"></div>
+                <div class="card card1" style="width: 30rem;">
+                    <div class="card-body konten">
+                        <h3 class="card-title" style="color:black">Nama Pekerjaan</h3>
+                        <hr>
+                        <p style="color:black">Deskripsi <br> Ini Deskripsi Pekerjaannya</p>
+                        <p style="color:black">Syarat pekerjaan <br> ini sayrat pekerjaannya</p>
+                    </div>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-success" type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne">Lihat Lowongan Perusahaan</button>									
+                                </h2>
+                            </div>
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="logoPerusahaan pl-3">
+                                            <img src="../img/logo perusahaan/1/Radya Labs.png" alt="" style="height:70px; width:70px;">
+                                        </div><br>
+                                        <div class="namaPerusahaan col-md-8">
+                                            <strong><Label class="pt-2" style="font-size:25px; text-align:left">Ini Nama Perusahaan</Label></strong>
+                                        </div><br><br><br>
+                                        <div class="deskripsiPerusahaan col-md-12">
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam perferendis, similique ratione maxime cumque quidem sapiente eius consequatur illo officiis ea, molestias, culpa quaerat temporibus obcaecati rerum excepturi adipisci dignissimos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p>Link Website</a></p>
+                                </div>
+                            </div>
                         </div>
-                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                            <div class="card-body">
-                                <p>Perusahaan 1</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pt-5 pl-5">
+                <div class="col-md-1"></div>
+                <div class="card card2" style="width: 30rem;">
+                    <div class="card-body konten">
+                        <h3 class="card-title" style="color:black">Nama Pekerjaan</h3>
+                        <hr>
+                        <p style="color:black">Deskripsi <br> Ini Deskripsi Pekerjaannya</p>
+                        <p style="color:black">Syarat pekerjaan <br> ini sayrat pekerjaannya</p>
+                    </div>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-success" type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo">Lihat Lowongan Perusahaan</button>									
+                                </h2>
                             </div>
-                            <div class="card-body">
-                                <p>Perusahaan 1</a></p>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="row">
+                                    <div class="logoPerusahaan pl-3">
+                                            <img src="../img/logo perusahaan/1/Radya Labs.png" alt="" style="height:70px; width:70px;">
+                                        </div><br>
+                                        <div class="namaPerusahaan col-md-8">
+                                            <strong><Label class="pt-2" style="font-size:25px; text-align:left">Ini Nama Perusahaan</Label></strong>
+                                        </div><br><br><br>
+                                        <div class="deskripsiPerusahaan col-md-12">
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam perferendis, similique ratione maxime cumque quidem sapiente eius consequatur illo officiis ea, molestias, culpa quaerat temporibus obcaecati rerum excepturi adipisci dignissimos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p>Link Website</a></p>
+                                </div>
                             </div>
-                            <div class="card-body">
-                                <p>Perusahaan 1</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pt-5 pl-5">
+                <div class="col-md-1"></div>
+                <div class="card card3" style="width: 30rem;">
+                    <div class="card-body konten">
+                        <h3 class="card-title" style="color:black">Nama Pekerjaan</h3>
+                        <hr>
+                        <p style="color:black">Deskripsi <br> Ini Deskripsi Pekerjaannya</p>
+                        <p style="color:black">Syarat pekerjaan <br> ini sayrat pekerjaannya</p>
+                    </div>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-success" type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseThree">Lihat Lowongan Perusahaan</button>									
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="row">
+                                    <div class="logoPerusahaan pl-3">
+                                            <img src="../img/logo perusahaan/1/Radya Labs.png" alt="" style="height:70px; width:70px;">
+                                        </div><br>
+                                        <div class="namaPerusahaan col-md-8">
+                                            <strong><Label class="pt-2" style="font-size:25px; text-align:left">Ini Nama Perusahaan</Label></strong>
+                                        </div><br><br><br>
+                                        <div class="deskripsiPerusahaan col-md-12">
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam perferendis, similique ratione maxime cumque quidem sapiente eius consequatur illo officiis ea, molestias, culpa quaerat temporibus obcaecati rerum excepturi adipisci dignissimos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p>Link Website</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- baru -->
+        <div class="row cardPekerjaan">
+            <div class="col-md-1"></div>
+            <div class="row pt-5">
+                <div class="col-md-1"></div>
+                <div class="card card1" style="width: 30rem; position: absolute;">
+                    <div class="card-body konten">
+                        <h3 class="card-title" style="color:black">Nama Pekerjaan</h3>
+                        <hr>
+                        <p style="color:black">Deskripsi <br> Ini Deskripsi Pekerjaannya</p>
+                        <p style="color:black">Syarat pekerjaan <br> ini sayrat pekerjaannya</p>
+                    </div>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-success" type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne">Lihat Lowongan Perusahaan</button>									
+                                </h2>
+                            </div>
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="logoPerusahaan pl-3">
+                                            <img src="../img/logo perusahaan/1/Radya Labs.png" alt="" style="height:70px; width:70px;">
+                                        </div><br>
+                                        <div class="namaPerusahaan col-md-8">
+                                            <strong><Label class="pt-2" style="font-size:25px; text-align:left">Ini Nama Perusahaan</Label></strong>
+                                        </div><br><br><br>
+                                        <div class="deskripsiPerusahaan col-md-12">
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam perferendis, similique ratione maxime cumque quidem sapiente eius consequatur illo officiis ea, molestias, culpa quaerat temporibus obcaecati rerum excepturi adipisci dignissimos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p>Link Website</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+
+            <!-- dua -->
+            <div class="row pt-5 pl-5">
+                <div class="col-md-5"></div>
+                <div class="card card2" style="width: 30rem; position: absolute;">
+                    <div class="card-body konten">
+                        <h3 class="card-title" style="color:black">Nama Pekerjaan</h3>
+                        <hr>
+                        <p style="color:black">Deskripsi <br> Ini Deskripsi Pekerjaannya lorem</p>
+                        <p style="color:black">Syarat pekerjaan <br> ini sayrat pekerjaannya</p>
+                    </div>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-success" type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo">Lihat Lowongan Perusahaan</button>									
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="row">
+                                    <div class="logoPerusahaan pl-3">
+                                            <img src="../img/logo perusahaan/1/Radya Labs.png" alt="" style="height:70px; width:70px;">
+                                        </div><br>
+                                        <div class="namaPerusahaan col-md-8">
+                                            <strong><Label class="pt-2" style="font-size:25px; text-align:left">Ini Nama Perusahaan</Label></strong>
+                                        </div><br><br><br>
+                                        <div class="deskripsiPerusahaan col-md-12">
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam perferendis, similique ratione maxime cumque quidem sapiente eius consequatur illo officiis ea, molestias, culpa quaerat temporibus obcaecati rerum excepturi adipisci dignissimos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p>Link Website</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+
+            <!-- tiga -->
+            <div class="row kotak3 pt-5 pl-5">
+                <div class="col-md-1"></div>
+                <div class="card card3" style="width: 30rem;">
+                    <div class="card-body konten">
+                        <h3 class="card-title" style="color:black">Nama Pekerjaan</h3>
+                        <hr>
+                        <p style="color:black">Deskripsi <br> Ini Deskripsi Pekerjaannya</p>
+                        <p style="color:black">Syarat pekerjaan <br> ini sayrat pekerjaannya</p>
+                    </div>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-success" type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseThree">Lihat Lowongan Perusahaan</button>									
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="row">
+                                    <div class="logoPerusahaan pl-3">
+                                            <img src="../img/logo perusahaan/1/Radya Labs.png" alt="" style="height:70px; width:70px;">
+                                        </div><br>
+                                        <div class="namaPerusahaan col-md-8">
+                                            <strong><Label class="pt-2" style="font-size:25px; text-align:left">Ini Nama Perusahaan</Label></strong>
+                                        </div><br><br><br>
+                                        <div class="deskripsiPerusahaan col-md-12">
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam perferendis, similique ratione maxime cumque quidem sapiente eius consequatur illo officiis ea, molestias, culpa quaerat temporibus obcaecati rerum excepturi adipisci dignissimos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p>Link Website</a></p>
+                                </div>
                             </div>
                         </div>
                     </div>
