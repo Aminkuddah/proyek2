@@ -96,8 +96,7 @@ if (!empty($nama) && !empty($ipk) && !empty($pendidikan) && !empty($usia) && !em
             VALUES ('$nama', '$hasilAkhir1', '$hasilAkhir2', '$hasilAkhir3', '$usia', '$gender', '$nilaiBahasa', '$ipk', '$nilaiPendidikan', '$nilaiAkreditasi')";
 
             if (mysqli_query($con, $query)) {
-                $error = urlencode("berhasil");
-                header("Location: ../module/landingCariPekerjaan.php?error=$error");
+                header("Location: ../module/landingCariPekerjaan.php");
             }else{
                 $error = urlencode("gagal");
                 header("Location: ../module/cariPekerjaan.php?error=$error");
