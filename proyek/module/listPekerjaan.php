@@ -12,6 +12,10 @@ if(isset($_GET['pesan'])){
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/listPekerjaan.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
     <div id="home" class="container-fluid">
@@ -40,18 +44,39 @@ if(isset($_GET['pesan'])){
                         while($row = mysqli_fetch_assoc($result)){
                             ?>
 
-                            <div class="tinjau card border">
+                            <!-- <div class="tinjau card border">
                                 <h2 style="color:black;"><?php echo $index++; ?>  <?php echo $row["nama_kategori"]; ?>
                                 <button type="button" id="read<?php echo $index ?>" onClick="read(<?php echo $index ?>)" class="bg bg-warning" style="color:white; float:right; width:20%;">Read More</button></h2>
                             </div>
-                            <!-- <div class="konten">
-                                <p style="color:black;"><?php echo $row["keterangan"]; ?> </p>
-                            </div> -->
 
-                            <!-- <h1 style="color:black">Lorem Ipsum</h1> -->
-                            <p style="color:black">
-                                <span style="display:none" class="more" id="more<?php echo $index ?>"><?php echo $row["keterangan"]; ?></span></p>
-                            <!-- <button type="button" id="read" onClick="read()">Read More</button> -->
+                            <p style="color:black; font-size:25px;">
+                                <span style="display:none" class="more" id="more<?php echo $index ?>"><?php echo $row["keterangan"]; ?></span></p> -->
+
+                            <!-- <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <?php echo $row["nama_kategori"]; ?>
+                                        </button>
+                                    </h2>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                    <?php echo $row["keterangan"]; ?>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            
+                            <button type="button" class="collapsible">
+                                <h2><?php echo $row["nama_kategori"]; ?>    
+                            </button>
+                            <div class="content">
+                                <p><?php echo $row["keterangan"]; ?></p>
+                            </div>
+
                     <?php }
                     }else{ ?>
                         <tr>
@@ -62,11 +87,11 @@ if(isset($_GET['pesan'])){
                     }
                 mysqli_close($con); 
                 ?>
-            
+            <br>
         </div>
     </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-    <script> 
+    <!-- <script> 
         $(document).ready(function(){
             $(".tinjau").click(function(){
                 $(".konten").slideToggle("slow");
@@ -75,7 +100,6 @@ if(isset($_GET['pesan'])){
     </script>
 
     <script type="text/javascript">
-        // var i=0;
         let isOpen = false;
 
         function read(i){
@@ -92,6 +116,23 @@ if(isset($_GET['pesan'])){
                 document.getElementById(idRead).innerHTML = "Read more";
                 isOpen = false;
             }
+        }
+    </script> -->
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+            content.style.display = "none";
+            } else {
+            content.style.display = "block";
+            }
+        });
         }
     </script>
 

@@ -38,3 +38,30 @@ button{
     outline:none;
 
 }
+
+.collapsible {
+    background-color: rgb(241, 234, 234);
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    /* background-color: rgb(255, 255, 255); */
+    background-image: url(../img/gradien1.jpg);
+    color: white;
+  }
+  
+  .content {
+    background-image: url(../img/gradien1.jpg);
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    /* background-color: #302020; */
+    font-size: 25px;
+  }
