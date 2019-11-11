@@ -239,16 +239,32 @@ if(isset($_GET['error'])){
         </div> -->
 
         <!-- baru -->
+
+        <?php
+            $cari_hasil = "SELECT * FROM tb_history ORDER BY id_history DESC LIMIT 1";
+            $test = mysqli_query($con, $cari_hasil);
+            $baris = mysqli_fetch_assoc($test);
+
+            $no1 = $baris["hasil1"];
+            $no2 = $baris["hasil2"];
+            $no3 = $baris["hasil3"];
+
+            if(!empty($no1) && !empty($no2) && !empty($no3)){
+                $queryNo1 = "SELECT * FROM tb_pekerjaan where id_kategori = $no1";
+                $resultNo1 = mysqli_query($con, $queryNo1);
+                $barisNo1 = mysqli_fetch_assoc($resultNo1);
+                ?>
+                
         <div class="row cardPekerjaan">
             <div class="col-md-1"></div>
             <div class="row pt-5">
                 <div class="col-md-1"></div>
                 <div class="card card1" style="width: 30rem; position: absolute;">
                     <div class="card-body konten">
-                        <h3 class="card-title" style="color:black">Nama Pekerjaan</h3>
+                        <h3 class="card-title" style="color:black"><?php echo $barisNo1["nama_kategori"]; ?></h3>
                         <hr>
-                        <p style="color:black">Deskripsi <br> Ini Deskripsi Pekerjaannya</p>
-                        <p style="color:black">Syarat pekerjaan <br> ini sayrat pekerjaannya</p>
+                        <p style="color:black">Deskripsi <br><?php echo $barisNo1["keterangan"]; ?></p>
+                        <p style="color:black">Syarat pekerjaan <br><?php echo $barisNo1["syarat"]; ?></p>
                     </div>
                     <div class="accordion" id="accordionExample">
                         <div class="card">
@@ -258,13 +274,22 @@ if(isset($_GET['error'])){
                                 </h2>
                             </div>
                             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <?php
+                                $queryPekerjaan1 = "SELECT p.nama_perusahaan, p.link, p.id_perusahaan FROM tb_fk_perusahaan_kerja pk, tb_perusahaan p WHERE pk.fk_pekerjaan = $no1 AND pk.fk_perusahaan = p.id_perusahaan";
+                                $resultPekerjaan1 = mysqli_query($con, $queryPekerjaan1);
+                                // $barisPekerjaan1 = mysqli_fetch_assoc($resultPekerjaan1);
+                                if(mysqli_num_rows($resultPekerjaan1) > 0){
+                                    // $index = 1;
+                                    while($rowPekerjaan1 = mysqli_fetch_assoc($resultPekerjaan1)){
+                                        $id_file1=$rowPekerjaan1["link"];
+                            ?>
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="logoPerusahaan pl-3">
-                                            <img src="../img/logo perusahaan/1/Radya Labs.png" alt="" style="height:70px; width:70px;">
+                                            <img src="../img/logo perusahaan/<?php echo $rowPekerjaan1["id_perusahaan"]; ?>.png" alt="" style="height:70px; width:70px;">
                                         </div><br>
                                         <div class="namaPerusahaan col-md-8">
-                                            <strong><Label class="pt-2" style="font-size:25px; text-align:left">Ini Nama Perusahaan</Label></strong>
+                                            <strong><Label class="pt-2" style="font-size:25px; text-align:left"><?php echo $rowPekerjaan1["nama_perusahaan"] ?></Label></strong>
                                         </div><br><br><br>
                                         <div class="deskripsiPerusahaan col-md-12">
                                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam perferendis, similique ratione maxime cumque quidem sapiente eius consequatur illo officiis ea, molestias, culpa quaerat temporibus obcaecati rerum excepturi adipisci dignissimos.</p>
@@ -272,8 +297,10 @@ if(isset($_GET['error'])){
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <p>Link Website</a></p>
+                                    <a target="_blank" href='<?php echo $id_file1 ?>' class='btn btn-primary'>Open Website</a>
                                 </div>
+                                <?php }
+                            }else{} ?>
                             </div>
                         </div>
                     </div>
@@ -283,14 +310,19 @@ if(isset($_GET['error'])){
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 
             <!-- dua -->
+            <?php
+                $queryNo2 = "SELECT * FROM tb_pekerjaan where id_kategori = $no2";
+                $resultNo2 = mysqli_query($con, $queryNo2);
+                $barisNo2 = mysqli_fetch_assoc($resultNo2);
+                ?>
             <div class="row pt-5 pl-5">
                 <div class="col-md-5"></div>
                 <div class="card card2" style="width: 30rem; position: absolute;">
                     <div class="card-body konten">
-                        <h3 class="card-title" style="color:black">Nama Pekerjaan</h3>
+                        <h3 class="card-title" style="color:black"><?php echo $barisNo2["nama_kategori"]; ?></h3>
                         <hr>
-                        <p style="color:black">Deskripsi <br> Ini Deskripsi Pekerjaannya lorem</p>
-                        <p style="color:black">Syarat pekerjaan <br> ini sayrat pekerjaannya</p>
+                        <p style="color:black">Deskripsi <br><?php echo $barisNo2["keterangan"]; ?></p>
+                        <p style="color:black">Syarat pekerjaan <br><?php echo $barisNo2["syarat"]; ?></p>
                     </div>
                     <div class="accordion" id="accordionExample">
                         <div class="card">
@@ -300,13 +332,22 @@ if(isset($_GET['error'])){
                                 </h2>
                             </div>
                             <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <?php
+                                $queryPekerjaan2 = "SELECT p.nama_perusahaan, p.link, p.id_perusahaan FROM tb_fk_perusahaan_kerja pk, tb_perusahaan p WHERE pk.fk_pekerjaan = $no2 AND pk.fk_perusahaan = p.id_perusahaan";
+                                $resultPekerjaan2 = mysqli_query($con, $queryPekerjaan2);
+                                // $barisPekerjaan1 = mysqli_fetch_assoc($resultPekerjaan1);
+                                if(mysqli_num_rows($resultPekerjaan2) > 0){
+                                    // $index = 1;
+                                    while($rowPekerjaan2 = mysqli_fetch_assoc($resultPekerjaan2)){
+                                        $id_file2=$rowPekerjaan2["link"];
+                            ?>
                                 <div class="card-body">
                                     <div class="row">
                                     <div class="logoPerusahaan pl-3">
-                                            <img src="../img/logo perusahaan/1/Radya Labs.png" alt="" style="height:70px; width:70px;">
+                                            <img src="../img/logo perusahaan/<?php echo $rowPekerjaan2["id_perusahaan"]; ?>.png" alt="" style="height:70px; width:70px;">
                                         </div><br>
                                         <div class="namaPerusahaan col-md-8">
-                                            <strong><Label class="pt-2" style="font-size:25px; text-align:left">Ini Nama Perusahaan</Label></strong>
+                                            <strong><Label class="pt-2" style="font-size:25px; text-align:left"><?php echo $rowPekerjaan2["nama_perusahaan"] ?></Label></strong>
                                         </div><br><br><br>
                                         <div class="deskripsiPerusahaan col-md-12">
                                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam perferendis, similique ratione maxime cumque quidem sapiente eius consequatur illo officiis ea, molestias, culpa quaerat temporibus obcaecati rerum excepturi adipisci dignissimos.</p>
@@ -314,8 +355,10 @@ if(isset($_GET['error'])){
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <p>Link Website</a></p>
+                                    <a target="_blank" href='<?php echo $id_file2 ?>' class='btn btn-primary'>Open Website</a>
                                 </div>
+                                <?php }
+                            }else{} ?>
                             </div>
                         </div>
                     </div>
@@ -325,14 +368,19 @@ if(isset($_GET['error'])){
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 
             <!-- tiga -->
+            <?php
+                $queryNo3 = "SELECT * FROM tb_pekerjaan where id_kategori = $no3";
+                $resultNo3 = mysqli_query($con, $queryNo3);
+                $barisNo3 = mysqli_fetch_assoc($resultNo3);
+                ?>
             <div class="row kotak3 pt-5 pl-5">
                 <div class="col-md-1"></div>
                 <div class="card card3" style="width: 30rem;">
                     <div class="card-body konten">
-                        <h3 class="card-title" style="color:black">Nama Pekerjaan</h3>
+                        <h3 class="card-title" style="color:black"><?php echo $barisNo3["nama_kategori"]; ?></h3>
                         <hr>
-                        <p style="color:black">Deskripsi <br> Ini Deskripsi Pekerjaannya</p>
-                        <p style="color:black">Syarat pekerjaan <br> ini sayrat pekerjaannya</p>
+                        <p style="color:black">Deskripsi <br><?php echo $barisNo3["keterangan"]; ?></p>
+                        <p style="color:black">Syarat pekerjaan <br><?php echo $barisNo3["syarat"]; ?>/p>
                     </div>
                     <div class="accordion" id="accordionExample">
                         <div class="card">
@@ -342,13 +390,22 @@ if(isset($_GET['error'])){
                                 </h2>
                             </div>
                             <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <?php
+                                $queryPekerjaan3 = "SELECT p.nama_perusahaan, p.link, p.id_perusahaan FROM tb_fk_perusahaan_kerja pk, tb_perusahaan p WHERE pk.fk_pekerjaan = $no3 AND pk.fk_perusahaan = p.id_perusahaan";
+                                $resultPekerjaan3 = mysqli_query($con, $queryPekerjaan3);
+                                // $barisPekerjaan1 = mysqli_fetch_assoc($resultPekerjaan1);
+                                if(mysqli_num_rows($resultPekerjaan3) > 0){
+                                    // $index = 1;
+                                    while($rowPekerjaan3 = mysqli_fetch_assoc($resultPekerjaan3)){
+                                        $id_file1=$rowPekerjaan3["link"];
+                            ?>
                                 <div class="card-body">
                                     <div class="row">
                                     <div class="logoPerusahaan pl-3">
-                                            <img src="../img/logo perusahaan/1/Radya Labs.png" alt="" style="height:70px; width:70px;">
+                                            <img src="../img/logo perusahaan/<?php echo $rowPekerjaan3["id_perusahaan"] ?>.png" alt="" style="height:70px; width:70px;">
                                         </div><br>
                                         <div class="namaPerusahaan col-md-8">
-                                            <strong><Label class="pt-2" style="font-size:25px; text-align:left">Ini Nama Perusahaan</Label></strong>
+                                            <strong><Label class="pt-2" style="font-size:25px; text-align:left"><?php echo $rowPekerjaan3["nama_perusahaan"] ?></Label></strong>
                                         </div><br><br><br>
                                         <div class="deskripsiPerusahaan col-md-12">
                                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam perferendis, similique ratione maxime cumque quidem sapiente eius consequatur illo officiis ea, molestias, culpa quaerat temporibus obcaecati rerum excepturi adipisci dignissimos.</p>
@@ -356,14 +413,17 @@ if(isset($_GET['error'])){
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <p>Link Website</a></p>
+                                    <a target="_blank" href='<?php echo $id_file3 ?>' class='btn btn-primary'>Open Website</a>
                                 </div>
+                                <?php }
+                            }else{} ?>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>    
+            <?php }else{} ?>
     </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <?php include 'bahan.php';?>
