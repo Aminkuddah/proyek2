@@ -276,7 +276,7 @@ if(isset($_GET['error'])){
                                 </div>
                                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                                 <?php
-                                    $queryPekerjaan1 = "SELECT p.nama_perusahaan, p.link, p.id_perusahaan FROM tb_fk_perusahaan_kerja pk, tb_perusahaan p WHERE pk.fk_pekerjaan = $no1 AND pk.fk_perusahaan = p.id_perusahaan";
+                                    $queryPekerjaan1 = "SELECT p.nama_perusahaan, p.link, p.id_perusahaan, p.deskripsi FROM tb_fk_perusahaan_kerja pk, tb_perusahaan p WHERE pk.fk_pekerjaan = $no1 AND pk.fk_perusahaan = p.id_perusahaan";
                                     $resultPekerjaan1 = mysqli_query($con, $queryPekerjaan1);
                                     // $barisPekerjaan1 = mysqli_fetch_assoc($resultPekerjaan1);
                                     if(mysqli_num_rows($resultPekerjaan1) > 0){
@@ -293,7 +293,7 @@ if(isset($_GET['error'])){
                                                 <strong><Label class="pt-2" style="font-size:25px; text-align:left"><?php echo $rowPekerjaan1["nama_perusahaan"] ?></Label></strong>
                                             </div><br><br><br>
                                             <div class="deskripsiPerusahaan col-md-12">
-                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam perferendis, similique ratione maxime cumque quidem sapiente eius consequatur illo officiis ea, molestias, culpa quaerat temporibus obcaecati rerum excepturi adipisci dignissimos.</p>
+                                                <p><?php echo $rowPekerjaan1["deskripsi"] ?></p>
                                             </div>
                                         </div>
                                     </div>
@@ -334,7 +334,7 @@ if(isset($_GET['error'])){
                                 </div>
                                 <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                                 <?php
-                                    $queryPekerjaan2 = "SELECT p.nama_perusahaan, p.link, p.id_perusahaan FROM tb_fk_perusahaan_kerja pk, tb_perusahaan p WHERE pk.fk_pekerjaan = $no2 AND pk.fk_perusahaan = p.id_perusahaan";
+                                    $queryPekerjaan2 = "SELECT p.nama_perusahaan, p.link, p.id_perusahaan, p.deskripsi FROM tb_fk_perusahaan_kerja pk, tb_perusahaan p WHERE pk.fk_pekerjaan = $no2 AND pk.fk_perusahaan = p.id_perusahaan";
                                     $resultPekerjaan2 = mysqli_query($con, $queryPekerjaan2);
                                     // $barisPekerjaan1 = mysqli_fetch_assoc($resultPekerjaan1);
                                     if(mysqli_num_rows($resultPekerjaan2) > 0){
@@ -351,7 +351,7 @@ if(isset($_GET['error'])){
                                                 <strong><Label class="pt-2" style="font-size:25px; text-align:left"><?php echo $rowPekerjaan2["nama_perusahaan"] ?></Label></strong>
                                             </div><br><br><br>
                                             <div class="deskripsiPerusahaan col-md-12">
-                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam perferendis, similique ratione maxime cumque quidem sapiente eius consequatur illo officiis ea, molestias, culpa quaerat temporibus obcaecati rerum excepturi adipisci dignissimos.</p>
+                                                <p><?php echo $rowPekerjaan2["deskripsi"] ?></p>
                                             </div>
                                         </div>
                                     </div>
@@ -392,13 +392,13 @@ if(isset($_GET['error'])){
                                 </div>
                                 <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                                 <?php
-                                    $queryPekerjaan3 = "SELECT p.nama_perusahaan, p.link, p.id_perusahaan FROM tb_fk_perusahaan_kerja pk, tb_perusahaan p WHERE pk.fk_pekerjaan = $no3 AND pk.fk_perusahaan = p.id_perusahaan";
+                                    $queryPekerjaan3 = "SELECT p.nama_perusahaan, p.link, p.id_perusahaan, p.deskripsi FROM tb_fk_perusahaan_kerja pk, tb_perusahaan p WHERE pk.fk_pekerjaan = $no3 AND pk.fk_perusahaan = p.id_perusahaan";
                                     $resultPekerjaan3 = mysqli_query($con, $queryPekerjaan3);
                                     // $barisPekerjaan1 = mysqli_fetch_assoc($resultPekerjaan1);
                                     if(mysqli_num_rows($resultPekerjaan3) > 0){
                                         // $index = 1;
                                         while($rowPekerjaan3 = mysqli_fetch_assoc($resultPekerjaan3)){
-                                            $id_file1=$rowPekerjaan3["link"];
+                                            $id_file3=$rowPekerjaan3["link"];
                                 ?>
                                     <div class="card-body">
                                         <div class="row">
@@ -409,7 +409,7 @@ if(isset($_GET['error'])){
                                                 <strong><Label class="pt-2" style="font-size:25px; text-align:left"><?php echo $rowPekerjaan3["nama_perusahaan"] ?></Label></strong>
                                             </div><br><br><br>
                                             <div class="deskripsiPerusahaan col-md-12">
-                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam perferendis, similique ratione maxime cumque quidem sapiente eius consequatur illo officiis ea, molestias, culpa quaerat temporibus obcaecati rerum excepturi adipisci dignissimos.</p>
+                                                <p><?php echo $rowPekerjaan3["deskripsi"] ?></p>
                                             </div>
                                         </div>
                                     </div>
