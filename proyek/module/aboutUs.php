@@ -24,7 +24,7 @@ if(isset($_GET['error'])){
 </head>
 <body>
     <div id="home" class="container-fluid">
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-lg-2 p-3"></div>
             <div class="col-lg-8 p-3">
                 <div class="navbar navbar-light">
@@ -37,7 +37,7 @@ if(isset($_GET['error'])){
                     </div>
                 </div>
             </div>
-        </div><br>
+        </div><br> -->
         <div class="atas"><br>
             <div class="row">
                 <div class="col-md-3"></div>
