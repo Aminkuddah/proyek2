@@ -265,13 +265,13 @@ if(isset($_GET['error'])){
                             <h3 class="card-title" style="color:black"><?php echo $barisNo1["nama_kategori"]; ?></h3>
                             <hr>
                             <p style="color:black"> <strong> Deskripsi</strong> <br><?php echo $barisNo1["keterangan"]; ?></p>
-                            <p style="color:black">Syarat pekerjaan <?php echo $barisNo1["syarat"]; ?></p>
+                            <p style="color:black"><strong> Syarat pekerjaan</strong> <?php echo $barisNo1["syarat"]; ?></p>
                         </div>
                         <div class="accordion" id="accordionExample">
                             <div class="card">
                                 <div class="card-header" id="headingOne">
                                     <h2 class="mb-0">
-                                        <button class="btn btn-success" type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne">Lihat Lowongan Perusahaan</button>									
+                                        <button class="tombol" type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne">Lihat Lowongan Perusahaan</button>									
                                     </h2>
                                 </div>
                                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
@@ -315,7 +315,7 @@ if(isset($_GET['error'])){
                 $resultNo2 = mysqli_query($con, $queryNo2);
                 $barisNo2 = mysqli_fetch_assoc($resultNo2);
                 ?>
-            <div class="row pt-5 ">
+            <div class="row pt-5 pl-2">
                 <div class="col-md-1"></div>
                 <div class="col-md-3">
                     <div class="card card2" style="width: 30rem;">
@@ -323,7 +323,7 @@ if(isset($_GET['error'])){
                             <h3 class="card-title" style="color:black"><?php echo $barisNo2["nama_kategori"]; ?></h3>
                             <hr>
                             <p style="color:black"><strong> Deskripsi</strong> <br><?php echo $barisNo2["keterangan"]; ?></p>
-                            <p style="color:black">Syarat pekerjaan <?php echo $barisNo2["syarat"]; ?></p>
+                            <p style="color:black"><strong> Syarat pekerjaan</strong> <?php echo $barisNo2["syarat"]; ?></p>
                         </div>
                         <div class="accordion" id="accordionExample">
                             <div class="card">
@@ -373,7 +373,7 @@ if(isset($_GET['error'])){
                 $resultNo3 = mysqli_query($con, $queryNo3);
                 $barisNo3 = mysqli_fetch_assoc($resultNo3);
                 ?>
-            <div class="row kotak3 pt-5 pl-2">
+            <div class="row kotak3 pt-5 pl-3">
                 <div class="col-md-1"></div>
                 <div class="col-md-3">
                     <div class="card card3" style="width: 30rem;">
@@ -381,7 +381,7 @@ if(isset($_GET['error'])){
                             <h3 class="card-title" style="color:black"><?php echo $barisNo3["nama_kategori"]; ?></h3>
                             <hr>
                             <p style="color:black"><strong> Deskripsi</strong> <br><?php echo $barisNo3["keterangan"]; ?></p>
-                            <p style="color:black">Syarat pekerjaan <?php echo $barisNo3["syarat"]; ?>/p>
+                            <p style="color:black"><strong> Syarat pekerjaan</strong><?php echo $barisNo3["syarat"]; ?>/p>
                         </div>
                         <div class="accordion" id="accordionExample">
                             <div class="card">

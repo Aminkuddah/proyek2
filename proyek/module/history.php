@@ -12,8 +12,7 @@ if(isset($_GET['pesan'])){
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../css/history.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="../css/history.css"></head>
 <body>
     <div id="home" class="container-fluid">
         <div class="row">    
@@ -32,9 +31,9 @@ if(isset($_GET['pesan'])){
         </div>
 
         <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-                <table class="table table-stripped text-center rounded bg-light">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <table class="table tabel text-center">
                     <thead>
                         <tr>
                             <th class='align-middle'>#</th>
@@ -96,7 +95,7 @@ if(isset($_GET['pesan'])){
                 </table>
             </div>
         </div>
-    </div> 
+    </div> <br><br><br><br><br><br>
 
     <?php include 'bahan.php';?>
 </body>
