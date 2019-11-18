@@ -1,3 +1,13 @@
+<?php
+include '../helper/connection.php';
+
+if(isset($_GET['pesan'])){
+    $mess="<p> {$_GET['pesan']}</p>";
+}else{
+    $mess="";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,6 +50,49 @@
                             <th class='align-middle'>Akreditasi</th>
                         </tr>
                     </thead>
+                    <tbody>
+                    <?php
+                        $query = "SELECT * FROM tb_history";
+                        $result = mysqli_query($con, $query);
+                        if(mysqli_num_rows($result) > 0){
+                            $index = 1;
+                            while($row = mysqli_fetch_assoc($result)){
+                                // $id_file=$row["link"];
+                                ?>
+                                <tr>
+                                    <td class='align-middle'><?php echo $index++; ?></td>
+                                    <td class='align-middle'><?php echo $row["nama"]; ?></td>
+                                    <td class='align-middle'><?php echo $row["hasil1"]; ?></td>
+                                    <td class='align-middle'><?php echo $row["hasil2"]; ?></td>
+                                    <td class='align-middle'><?php echo $row["hasil3"]; ?></td>
+                                    <td class='align-middle'><?php echo $row["usia"]; ?></td>
+                                    <td class='align-middle'><?php echo $row["gender"]; ?></td>
+                                    <td class='align-middle'><?php echo $row["b_inggris"]; ?></td>
+                                    <td class='align-middle'><?php echo $row["ipk"]; ?></td>
+                                    <td class='align-middle'><?php echo $row["penTerakhir"]; ?></td>
+                                    <td class='align-middle'><?php echo $row["akreditasi"]; ?></td>
+                                    <!-- <td class='align-middle'><a href='' class='btn btn-primary'>Open Website</a></td> -->
+                                </tr>
+                        <?php }
+                        }else{ ?>
+                            <tr>
+                                <td class='align-middle'>Data Kosong</td>
+                                <td class='align-middle'>Data Kosong</td>
+                                <td class='align-middle'>Data Kosong</td>
+                                <td class='align-middle'>Data Kosong</td>
+                                <td class='align-middle'>Data Kosong</td>
+                                <td class='align-middle'>Data Kosong</td>
+                                <td class='align-middle'>Data Kosong</td>
+                                <td class='align-middle'>Data Kosong</td>
+                                <td class='align-middle'>Data Kosong</td>
+                                <td class='align-middle'>Data Kosong</td>
+                                <td class='align-middle'>Data Kosong</td>
+                            <tr>
+                        <?php
+                        }
+                    mysqli_close($con); 
+                    ?>
+                    </tbody>
                 </table>
             </div>
         </div>
