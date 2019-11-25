@@ -15,7 +15,7 @@ if(isset($_GET['pesan'])){
 </head>
 <body>
     <div id="home" class="container-fluid">
-        <div class="row">    
+        <!-- <div class="row">    
             <div class="col-lg-2 p-3"></div>
             <div class="col-lg-8 p-3">
                 <div class="navbar navbar-light">
@@ -28,7 +28,37 @@ if(isset($_GET['pesan'])){
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
+
+        <nav class="navbar navbar-expand-lg navbar-dark" style="font-size: 20px; font-family: Roboto;">
+            <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
+                <ul class="navbar-nav ml-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="listPekerjaan.php">List Pekerjaan</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="listPerusahaan.php">List Perusahaan</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-md-2">
+                <ul class="navbar-nav mr-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="cariPekerjaan.php">Cari Pekerjaan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="history.php">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutUs.php">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav><br><br>
+
         <div class="container mt-3 border border-success rounded bg-light">
             <div class="row m-3">
                 <table class="table table-stripped text-center" id="table_id">

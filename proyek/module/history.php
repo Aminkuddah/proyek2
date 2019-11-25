@@ -1,11 +1,20 @@
+<?php
+include '../helper/connection.php';
+
+if(isset($_GET['pesan'])){
+    $mess="<p> {$_GET['pesan']}</p>";
+}else{
+    $mess="";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../css/history.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="../css/history.css"></head>
 <body>
-    <div id="home" class="container-fluid">
+    <!-- <div id="home" class="container-fluid">
         <div class="row">    
             <div class="col-lg-2 p-3"></div>
             <div class="col-lg-8 p-3">
@@ -19,12 +28,41 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
+
+        <nav class="navbar navbar-expand-lg navbar-dark" style="font-size: 20px; font-family: Roboto;">
+            <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
+                <ul class="navbar-nav ml-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="listPekerjaan.php">List Pekerjaan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="listPerusahaan.php">List Perusahaan</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-md-2">
+                <ul class="navbar-nav mr-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="cariPekerjaan.php">Cari Pekerjaan</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="history.php">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutUs.php">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav><br><br>
 
         <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-                <table class="table table-stripped text-center rounded bg-light">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <table class="table tabel text-center">
                     <thead>
                         <tr>
                             <th class='align-middle'>#</th>
@@ -40,10 +78,53 @@
                             <th class='align-middle'>Akreditasi</th>
                         </tr>
                     </thead>
+                    <tbody>
+                    <?php
+                        $query = "SELECT * FROM tb_history";
+                        $result = mysqli_query($con, $query);
+                        if(mysqli_num_rows($result) > 0){
+                            $index = 1;
+                            while($row = mysqli_fetch_assoc($result)){
+                                // $id_file=$row["link"];
+                                ?>
+                                <tr>
+                                    <td class='align-middle'><?php echo $index++; ?></td>
+                                    <td class='align-middle'><?php echo $row["nama"]; ?></td>
+                                    <td class='align-middle'><?php echo $row["hasil1"]; ?></td>
+                                    <td class='align-middle'><?php echo $row["hasil2"]; ?></td>
+                                    <td class='align-middle'><?php echo $row["hasil3"]; ?></td>
+                                    <td class='align-middle'><?php echo $row["usia"]; ?></td>
+                                    <td class='align-middle'><?php echo $row["gender"]; ?></td>
+                                    <td class='align-middle'><?php echo $row["b_inggris"]; ?></td>
+                                    <td class='align-middle'><?php echo $row["ipk"]; ?></td>
+                                    <td class='align-middle'><?php echo $row["penTerakhir"]; ?></td>
+                                    <td class='align-middle'><?php echo $row["akreditasi"]; ?></td>
+                                    <!-- <td class='align-middle'><a href='' class='btn btn-primary'>Open Website</a></td> -->
+                                </tr>
+                        <?php }
+                        }else{ ?>
+                            <tr>
+                                <td class='align-middle'>Data Kosong</td>
+                                <td class='align-middle'>Data Kosong</td>
+                                <td class='align-middle'>Data Kosong</td>
+                                <td class='align-middle'>Data Kosong</td>
+                                <td class='align-middle'>Data Kosong</td>
+                                <td class='align-middle'>Data Kosong</td>
+                                <td class='align-middle'>Data Kosong</td>
+                                <td class='align-middle'>Data Kosong</td>
+                                <td class='align-middle'>Data Kosong</td>
+                                <td class='align-middle'>Data Kosong</td>
+                                <td class='align-middle'>Data Kosong</td>
+                            <tr>
+                        <?php
+                        }
+                    mysqli_close($con); 
+                    ?>
+                    </tbody>
                 </table>
             </div>
         </div>
-    </div> 
+    </div> <br><br><br><br><br><br>
 
     <?php include 'bahan.php';?>
 </body>
