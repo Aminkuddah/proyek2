@@ -89,7 +89,7 @@ if(isset($_GET['error'])){
                                 <label class="input-group-text" for="pendidikan">Akreditasi Kampus</label>
                             </div>
                             <select class="custom-select" id="akreditasi" name="akreditasi" required>
-                                <option value="">Pilih pendidikan terakhir anda</option>
+                                <option value="">Pilih Akreditasi</option>
                                 <option value="1">A</option>
                                 <option value="0.75">B</option>
                                 <option value="0.5">C</option>

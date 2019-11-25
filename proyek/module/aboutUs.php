@@ -40,11 +40,11 @@ if(isset($_GET['error'])){
         </div><br>
         <div class="atas"><br>
             <div class="row">
-                <div class="col-md-3"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2">
-                    <h3>Golek Kerjo</h3>
+                    <img src="../img/judul1.png" alt="">
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-5">
                 <?php if($mess != ''){ ?>
                         <h5 class="text-danger border border-danger rounded-pill pl-2 pr-2 pb-2 pt-2 bg-light"><?php echo $mess; ?></h5>
                     <?php } ?>
